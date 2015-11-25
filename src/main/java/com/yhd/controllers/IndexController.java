@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.yhd.DataConfig;
 import com.yhd.RepositoryConfig;
-import com.yhd.repoimpl.ProductRepo;
+import com.yhd.entities.Product;
 import com.yhd.repos.ProductResository;
 
 @Controller
@@ -19,6 +19,7 @@ public class IndexController {
 	
 	@RequestMapping("/")
 	public ModelAndView load (ModelAndView model){
+		productRepository.insert(new Product(0, "webapp/image/" ,  "Anwars' bed" , 30000000, 0));
 		model.setViewName("index.jsp");
 		model.addObject("title", "Your house Direct");
 		return model;

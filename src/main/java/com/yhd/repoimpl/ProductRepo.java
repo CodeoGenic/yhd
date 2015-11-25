@@ -34,7 +34,7 @@ public class ProductRepo implements ProductResository {
 
 	@Override
 	public <S extends Product> S insert(S entity) {
-		// TODO Auto-generated method stub
+		mongoOperation.insert(entity);
 		return null;
 	}
 
