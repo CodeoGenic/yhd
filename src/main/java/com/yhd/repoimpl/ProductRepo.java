@@ -5,12 +5,15 @@ import java.util.List;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.mongodb.core.MongoOperations;
 
 import com.yhd.entities.Product;
 import com.yhd.repos.ProductResository;
 
 public class ProductRepo implements ProductResository {
 
+	MongoOperations mongoOperation;
+	
 	@Override
 	public <S extends Product> List<S> save(Iterable<S> entites) {
 		// TODO Auto-generated method stub
@@ -98,6 +101,11 @@ public class ProductRepo implements ProductResository {
 	@Override
 	public void deleteAll() {
 		// TODO Auto-generated method stub
+		
+	}
+
+	public void setMongoOperation(MongoOperations mongoOperation) {
+		this.mongoOperation = mongoOperation;
 		
 	}
 
