@@ -23,7 +23,7 @@ public class ProductRepo implements ProductResository {
 	@Override
 	public List<Product> findAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return mongoOperation.findAll(Product.class);
 	}
 
 	@Override

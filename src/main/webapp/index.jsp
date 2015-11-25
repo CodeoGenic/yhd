@@ -76,7 +76,7 @@
 							  <li class="dropdown-header">Shop by Item</li>
 							  <li><a class="sofas" href="Bedroom.html">Sofas</a></li>
 							  <li><a class="sofabeds"href="category_menu.html">Sofa Beds</a></li>
-							  <li><a class="beds" href="product.html" class="ajax_right">Beds</a></li>
+							  <li><a class="beds" href="product" class="ajax_right">Beds</a></li>
 							  <li><a class="wardrobes" href="cart.html" class="ajax_right">Wardrobes</a></li>
 							  <li><a class="coffeetable" href="checkout.html" class="ajax_right">Coffee Tables</a></li>
 							  <li><a class="diningtables" href="checkout.html" class="ajax_right">Dining Tables</a></li>

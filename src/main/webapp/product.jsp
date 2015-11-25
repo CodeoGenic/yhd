@@ -171,13 +171,13 @@
 				  </div>
   			</div>
 		    <div class="col-md-6">
-				<h1>White bed</h1>
-				    <div class="line"></div>
-						<ul>
-							<li><span>Brand:</span> <a href="#">Shop Online</a></li>
-							<li><span>Product Code:</span> Product 001</li>
-							<li><span>Availability: </span>In Stock</li>
-						</ul>
+
+				
+					<span><c:out value="${products}"/></span>
+					
+
+		    
+	
 					<div class="price">
 						Price <span class="strike">$150.00</span> <strong>$125.00</strong>
 					</div>
