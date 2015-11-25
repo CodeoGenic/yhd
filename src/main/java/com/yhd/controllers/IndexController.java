@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class IndexController {
 
-	@RequestMapping("anwar")
+	@RequestMapping("/")
 	public ModelAndView load (ModelAndView model){
 		model.setViewName("index.jsp");
 		model.addObject("title", "Your house Direct");
