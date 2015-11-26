@@ -176,6 +176,7 @@
 
 					<div class="line"></div>
 						<ul>
+							<li><span>Name:</span> <a href="#"><c:out value="${products[0].productName}"></c:out></a></li>
 							<li><span>Brand:</span> <a href="#"><c:out value="${products[0].productID}"></c:out></a></li>
 							<li><span>Product Code:</span><c:out value="${products[0].productID}"></c:out></li>
 							<li><span>Availability: </span>In Stock</li>
