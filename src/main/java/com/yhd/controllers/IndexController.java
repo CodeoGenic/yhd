@@ -19,7 +19,9 @@ public class IndexController {
 	
 	@RequestMapping("/")
 	public ModelAndView load (ModelAndView model){
-		//productRepository.insert(new Product(0, "/products/dress1home.jpg" ,  "Anwars' bed" , 30000000, 0));
+	/*	productRepository.insert(new Product(0, "Red", 0, "Its A winner", "products/dress1home.jpg", "King size bed",
+				3000, 3, 99999, "over nine Thosound", "muwhaha", "mdasda",
+				0));*/
 		model.setViewName("index.jsp");
 		model.addObject("title", "Your house Direct");
 		return model;
