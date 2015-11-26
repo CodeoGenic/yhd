@@ -28,7 +28,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="index.html" class="navbar-brand">
+				<a href="/" class="navbar-brand">
 					<img src="img/YHD.png" alt="Sapphire">
 				</a>
 			</div>

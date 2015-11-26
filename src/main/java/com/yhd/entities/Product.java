@@ -12,14 +12,25 @@ public class Product {
 	
 	@Id
 	private int productID;
+	private String color;
+	private int dimensions;
+	private String description;
 	private String image;
 	private String productName;
 	private int price;
 	private ArrayList<Image> images;
 	private int sockLevel;
-	
+	private int rating;
+	private String review;
+	private String customerName;
+	private String customerEmail;
+	private int productType;
 	
 	public Product(){
+		
+	}
+	
+	public Product (int productID, String color, int size, String description, String image, String productName, int price, int SockLevel, int rating,String review, String customerName, String customerEmail, int productInt){
 		
 	}
 	
@@ -86,6 +97,86 @@ public class Product {
 
 	public void setSockLevel(int sockLevel) {
 		this.sockLevel = sockLevel;
+	}
+
+
+	public String getColor() {
+		return color;
+	}
+
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+
+	public int getDimensions() {
+		return dimensions;
+	}
+
+
+	public void setDimensions(int dimensions) {
+		this.dimensions = dimensions;
+	}
+
+
+	public String getDescription() {
+		return description;
+	}
+
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+
+	public int getRating() {
+		return rating;
+	}
+
+
+	public void setRating(int rating) {
+		this.rating = rating;
+	}
+
+
+	public String getReview() {
+		return review;
+	}
+
+
+	public void setReview(String review) {
+		this.review = review;
+	}
+
+
+	public String getCustomerName() {
+		return customerName;
+	}
+
+
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+
+
+	public String getCustomerEmail() {
+		return customerEmail;
+	}
+
+
+	public void setCustomerEmail(String customerEmail) {
+		this.customerEmail = customerEmail;
+	}
+
+
+	public int getProductType() {
+		return productType;
+	}
+
+
+	public void setProductType(int productType) {
+		this.productType = productType;
 	}
 	
 	

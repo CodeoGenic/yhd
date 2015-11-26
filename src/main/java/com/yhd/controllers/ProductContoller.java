@@ -27,7 +27,6 @@ public class ProductContoller {
 		List<Product> product = products;
 		model.addObject("products", product);
 		model.setViewName("product.jsp");
-		model.addObject("icon","img/favicon.ico");
 		return model;
 		
 	}
