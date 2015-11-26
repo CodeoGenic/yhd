@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"  pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!doctype html>
 <html>
 <head>
@@ -11,6 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700' rel='stylesheet' type='text/css'/>
 	<link href='css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+ 
     <!--script type="text/javascript" src="https://getfirebug.com/firebug-lite-debug.js"></script-->	
 	<title>Sapphire</title>
 </head>
@@ -155,14 +157,14 @@
 
     <div class="container">
 		    <ul class="breadcrumb prod">
-			    <li><a href="index.html">Home</a> <span class="divider"></span></li>
+			    <li><a href="/">Home</a> <span class="divider"></span></li>
 				<li class="active">Product</li>
 		    </ul>
 
 		<div class="row product-info">
 		    <div class="col-md-6">
 					
-				<div class="image"><a class="cloud-zoom" rel="adjustX: 0, adjustY:0" id='zoom1' href="products/dress1home.jpg" title="Nano"><img src="products/dress1home.jpg" title="Nano" alt="Nano" id="image" /></a></div>
+				<div class="image"><a class="cloud-zoom" rel="adjustX: 0, adjustY:0" id='zoom1' href="${products[0].image}" title="Nano"><img src="${products[0].image}" title="Nano" alt="Nano" id="image" /></a></div>
 				<div class="image-additional">
 					<a title="Dress" rel="useZoom: 'zoom1', smallImage: 'products/dress1home.jpg'" class="cloud-zoom-gallery" href="products/dress1home.jpg"><img alt="Dress" title="Dress" src="products/dress1home.jpg"></a>
 					<a title="Dress" rel="useZoom: 'zoom1', smallImage: 'products/dress5home.jpg'" class="cloud-zoom-gallery" href="products/dress5home.jpg"><img alt="Dress" title="Dress" src="products/dress5home.jpg"></a>
@@ -172,14 +174,16 @@
   			</div>
 		    <div class="col-md-6">
 
-				
-					<span><c:out value="${products}"/></span>
+					<div class="line"></div>
+						<ul>
+							<li><span>Brand:</span> <a href="#"><c:out value="${products[0].productID}"></c:out></a></li>
+							<li><span>Product Code:</span><c:out value="${products[0].productID}"></c:out></li>
+							<li><span>Availability: </span>In Stock</li>
+						</ul>
 					
-
-		    
-	
+		    	
 					<div class="price">
-						Price <span class="strike">$150.00</span> <strong>$125.00</strong>
+						Price <span class="strike"><c:out value="${products[0].price}"></c:out></span> <strong>${products[0].price}</strong>
 					</div>
 					<!--
 						<span class="price-tax">Ex Tax: $400.00</span>

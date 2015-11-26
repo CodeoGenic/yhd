@@ -24,9 +24,10 @@ public class ProductContoller {
 	@RequestMapping("product")
 	public ModelAndView load(ModelAndView model){
 		List<Product>products = productRepository.findAll();
-		 String product = products.get(0).getProductName();
+		List<Product> product = products;
 		model.addObject("products", product);
 		model.setViewName("product.jsp");
+		model.addObject("icon","img/favicon.ico");
 		return model;
 		
 	}
