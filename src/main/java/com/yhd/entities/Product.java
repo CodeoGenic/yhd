@@ -11,6 +11,7 @@ public class Product {
 
 	@Id
 	private int productID;
+	
 	private String color;
 	private int dimensions;
 	private String description;

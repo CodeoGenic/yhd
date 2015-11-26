@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"  pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!doctype html>
 <html>
 <head>
@@ -189,21 +192,27 @@
 		</div>
 		
 		<div class="row">
-		    <div class="col-md-3">
+			<c:forEach items="${products}" var="product">
+			
+				 <div class="col-md-3">
 			    <div class="product">
 				    <div class="product_sale">Sale</div>
-				    <a href="product"><img alt="dress1" src="products/dress1home.jpg"></a>
+				    <a id="${product.productID}" href="product?id=${product.productID}"><img  alt="${product.image}" src="${product.image}"></a>
 				    <div class="name">
-				    <a href="">Elegant Dress</a>
+				    <a id="${product.productID}" href="${product.productName}"></a>
 				    </div>
 				    <div class="price">
-				    <p>$200.00</p>
+				    <p>${product.price}</p>
 				    </div>
 				    <div class="addcart">
 				    <a href="">Add to cart</a>
 				    </div>
 				</div>
 			</div>
+			
+			</c:forEach>
+		
+	
 		  
 		</div>	
 		<div class="row">
