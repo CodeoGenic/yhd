@@ -184,7 +184,7 @@
 					
 		    	
 					<div class="price">
-						Price <span class="strike"><c:out value="${products[0].price}"></c:out></span> <strong>${products[0].price}</strong>
+						Price <span class="strike"><c:out value="£${products[0].price}"></c:out></span> <strong>£${products[0].price}</strong>
 					</div>
 					<!--
 						<span class="price-tax">Ex Tax: $400.00</span>
@@ -286,75 +286,28 @@
 		</div>
 		
 		<h3 class="related">Related products</h3>
-		
 		<div class="row">
-		<div class="col-md-12">
+				
+		<c:forEach items="${related}" var="product">
+			
+				<div class="col-md-12">
 		    <div class="col-md-3">
 			    <div class="product">
 					<div class="product_sale">Sale</div>
-				    <a href="product.html"><img alt="dress1home" src="products/dress1home.jpg"></a>
+				    <a href="product"><img alt="${product.image}" src="${product.image}"></a>
 					<div class="name">
-				    <a href="">Elegant Dress</a>
+				    <a href="">${product.productName}</a>
 				    </div>
 				    <div class="price">
-				    <p>$200.00</p>
+				    <p>£${product.price}</p>
 				    </div>
 				</div>
 			</div>
-		    <div class="col-md-3">
-			    <div class="product">
-				    <a href="product.html"><img alt="dres2" src="products/dress5home.jpg"></a>
-				    <div class="name">
-				    <a href="">Lace Dress</a>
-				    </div>
-				    <div class="price">
-				    <p>$250.00</p>
-				    </div>	
 
-				</div>	
-			
-			</div>			
-		    <div class="col-md-3">
-			    <div class="product">
-				    <a href="product.html"><img alt="dress3" src="products/dress6home.jpg"></a>
-					<div class="name">
-				    <a href="">Floral Dress</a>
-				    </div>
-				    <div class="price">
-				    <p>$500.00</p>
-				    </div>
-				</div>	
-			</div>		
-			
-			
-		    <div class="col-md-3">
-			    <div class="product">
-				    <a href="product.html"><img alt="dress4" src="products/dress2home.jpg"></a>
-				    <div class="name">
-				    <a href="">Black Dress</a>
-				    </div>
-				    <div class="price">
-				    <p>$150.00</p>
-				    </div>
-
-				</div>	
-			</div>	
-			
-			
-		    <div class="col-md-3">
-			    <div class="product">
-				    <a href="product.html"><img alt="dress6" src="products/dress4home.jpg"></a>
-				    <div class="name">
-				    <a href="">White Dress</a>
-				    </div>
-				    <div class="price">
-				    <p>$120.00</p>
-				    </div>	
-
-				</div>			
-			</div>		
-			
 		</div>
+			
+			</c:forEach>
+	
 		</div>
 	</div>		
 

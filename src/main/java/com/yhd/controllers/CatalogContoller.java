@@ -47,11 +47,21 @@ public class CatalogContoller {
 		System.out.println(id);
 		List<Product>product = productRepository.findAll();
 		ArrayList<Product> prdoucts = new ArrayList<Product>();
+		ArrayList<Product> related = new ArrayList<Product>();
+		
 		for(int i =0; i<product.size(); i++){
 			if(product.get(i).getProductID()==id){
 					prdoucts.add(product.get(i));
 			}
 		}
+		for(int i=0; i<product.size(); i++){
+			for(int j=0; j<prdoucts.size(); j++){
+				if(product.get(i).getProductType()==prdoucts.get(j).getProductType()){
+					related.add(product.get(i));
+				}
+			}
+		}
+		model.addObject("related", related);
 		model.addObject("products", prdoucts );
 		model.setViewName("product.jsp");
 		return model;

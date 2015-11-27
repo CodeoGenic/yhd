@@ -202,7 +202,7 @@
 				    <a id="${product.productID}" href="${product.productName}"></a>
 				    </div>
 				    <div class="price">
-				    <p>${product.price}</p>
+				    <p>£${product.price}</p>
 				    </div>
 				    <div class="addcart">
 				    <a href="">Add to cart</a>

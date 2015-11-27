@@ -19,7 +19,7 @@ public class IndexController {
 	
 	@RequestMapping("/")
 	public ModelAndView load (ModelAndView model){
-/*	productRepository.insert(new Product(9, "Red", 0, "Its A winner", "image/assets/KN Upload/OFC1270/OFC1270a.jpg", "King size bed 10",
+/*	productRepository.insert(new Product(0, "Red", 0, "Its A winner", "image/assets/KN Upload/OFC1270/OFC1270a.jpg", "King size bed 1",
 				3000, 3, 99999, "over nine Thosound", "muwhaha", "mdasda",
 				0));
 	
