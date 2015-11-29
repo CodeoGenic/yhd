@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"  pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!doctype html>
 <html>
 <head>
@@ -11,10 +13,9 @@
     <link rel="stylesheet" type="text/css" href="css/camera.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--script type="text/javascript" src="https://getfirebug.com/firebug-lite-debug.js"></script-->	
-	<title>Living Room</title>
+	<title>Sapphire</title>
 </head>
 <body>
-<p id="filter">living_room</p>
 <div class="page-container">
 	<div class="header">
 		<nav class="navbar container">
@@ -152,7 +153,7 @@
 			</div><!-- /.navbar-collapse -->
 		</nav>
 	</div>
-		
+
     <div class="container">
         
 		<div class="row">
@@ -160,175 +161,38 @@
 			    <div class="breadcrumbs">
 				    <ul class="breadcrumb">
                         <li><a href="index.html">Home</a> <span class="divider"></span></li>
-                        <li class="active">Clothing</li>
+                        <li class="active">Forgotten Password</li>
                     </ul>
 				</div>
 			</div>
 			
 		</div>
+
+	    <h2>Forgot Your Password?</h2>
 		
-		<div class="row">
+		<div class="row box padding">
 		    <div class="col-md-12">
-			    <div class="cat_header">
-				    <h2>Living Room</h2>
-			    </div>
-
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="myProducts" id="myProducts">
-			</div>
-
-			<div class="myProducts">
-			</div>
-
-			<div class="myProducts">
-			</div>
-		</div>
-		
-		<div class="row">
-		    <div class="col-md-3">
-			    <div class="product">
-				    <div class="product_sale">Sale</div>
-				    <a href="product.html"><img alt="dress1" src="products/dress1home.jpg"></a>
-				    <div class="name">
-				    <a href="">Elegant Dress</a>
-				    </div>
-				    <div class="price">
-				    <p>$200.00</p>
-				    </div>
-				    <div class="addcart">
-				    <a href="">Add to cart</a>
-				    </div>
+				<p class="forgotten-password">Enter the e-mail address associated with your account. Click submit to have your password e-mailed to you.</p>
+				<div class="forgotten">
+					<form class="form-horizontal">
+						<div class="form-group">
+						<label class="control-label col-md-4" for="inputEmail">E-mail Address </label>
+							<div class="col-md-8">
+								<input type="text" id="inputEmail" placeholder="Email" class="form-control">
+							</div>
+						</div>
+					</form>
+						<p>
+						<button class="btn btn-primary" type="button">Continue</button>
+						</p>
 				</div>
 			</div>
-		    <div class="col-md-3">
-			    <div class="product">
-				    <a href="product.html"><img alt="dres2" src="products/dress5home.jpg"></a>
-				    <div class="name">
-				    <a href="">Lace Dress</a>
-				    </div>
-				    <div class="price">
-				    <p>$250.00</p>
-				    </div>	
-				    <div class="addcart">
-				    <a href="">Add to cart</a>
-				    </div>						
-				</div>	
-			
-			</div>			
-		    <div class="col-md-3">
-			    <div class="product">
-				    <a href="product.html"><img alt="dress3" src="products/dress6home.jpg"></a>
-					<div class="name">
-				    <a href="">Floral Dress</a>
-				    </div>
-				    <div class="price">
-				    <p>$500.00</p>
-				    </div>
-				    <div class="addcart">
-				    <a href="">Add to cart</a>
-				    </div>	
-				</div>	
-			</div>		
-		    <div class="col-md-3">
-			    <div class="product">
-				    <a href="product.html"><img alt="dress4" src="products/dress2home.jpg"></a>
-				    <div class="name">
-				    <a href="">Black Dress</a>
-				    </div>
-				    <div class="price">
-				    <p>$150.00</p>
-				    </div>
-				    <div class="addcart">
-				    <a href="">Add to cart</a>
-				    </div>						
-				</div>	
-			</div>		
+		</div>		    
 		
-		</div>
-
-		<div class="row">
-		    <div class="col-md-3">
-			    <div class="product">
-				    <a href="product.html"><img alt="dress5" src="products/dress3home.jpg"></a>
-				    <div class="name">
-				    <a href="">Midi Dress</a>
-				    </div>
-				    <div class="price">
-				    <p>$50.00</p>
-				    </div>	
-				    <div class="addcart">
-				    <a href="">Add to cart</a>
-				    </div>	
-				</div>
-			
-			</div>
-		    <div class="col-md-3">
-			    <div class="product">
-					<div class="product_sale">Sale</div>	
-				    <a href="product.html"><img alt="dress6" src="products/dress4home.jpg"></a>
-				    <div class="name">
-				    <a href="">White Dress</a>
-				    </div>
-				    <div class="price">
-				    <p>$120.00</p>
-				    </div>	
-				    <div class="addcart">
-				    <a href="">Add to cart</a>
-				    </div>						
-				</div>			
-			</div>			
-		    <div class="col-md-3">
-			    <div class="product">
-				    <a href="product.html"><img alt="dress7" src="products/dress7home.jpg"></a>
-				    <div class="name">
-				    <a href="">Red Dress</a>
-				    </div>
-				    <div class="price">
-				    <p>$20.00</p>
-				    </div>
-				    <div class="addcart">
-				    <a href="">Add to cart</a>
-				    </div>						
-				</div>			
-			</div>		
-		    <div class="col-md-3">
-			    <div class="product">
-					<div class="product_sale">Sale</div>
-				    <a href="product.html"><img alt="dress8" src="products/dress8home.jpg"></a>
-				    <div class="name">
-				    <a href="">Evening Dress</a>
-				    </div>
-				    <div class="price">
-				    <p>$670.00</p>
-				    </div>	
-				    <div class="addcart">
-				    <a href="">Add to cart</a>
-				    </div>						
-				</div>				
-			</div>		
-		
-		</div>	
-		<div class="row">
-			<div class="col-md-12">
-				<ul class="pagination pull-right">
-				  <li><a href="#">&laquo;</a></li>
-				  <li class="active"><a href="#">1</a></li>
-				  <li><a href="#">2</a></li>
-				  <li><a href="#">3</a></li>
-				  <li><a href="#">4</a></li>
-				  <li><a href="#">5</a></li>
-				  <li><a href="#">&raquo;</a></li>
-				</ul>
-			</div>
-		</div>
 		
 		
 	</div>		
-
-
+	
 	<div class="footer black">
 		<div class="container">
 			<!-- div class="arrow"><b class="caret"></b></div -->

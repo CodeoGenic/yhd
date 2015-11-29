@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"  pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!doctype html>
 <html>
 <head>
@@ -8,7 +10,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700' rel='stylesheet' type='text/css'/>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700' rel='stylesheet' type='text/css'/>
 	<link href='css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet" type="text/css" href="css/camera.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--script type="text/javascript" src="https://getfirebug.com/firebug-lite-debug.js"></script-->	
 	<title>Sapphire</title>
@@ -153,43 +154,59 @@
 	</div>
 
     <div class="container">
-        
 		<div class="row">
 		    <div class="col-md-12">
 			    <div class="breadcrumbs">
 				    <ul class="breadcrumb">
                         <li><a href="index.html">Home</a> <span class="divider"></span></li>
-                        <li class="active">Forgotten Password</li>
+                        <li class="active">Site Map</li>
                     </ul>
 				</div>
 			</div>
 			
 		</div>
-
-	    <h2>Forgot Your Password?</h2>
 		
-		<div class="row box padding">
+		<div class="row">
 		    <div class="col-md-12">
-				<p class="forgotten-password">Enter the e-mail address associated with your account. Click submit to have your password e-mailed to you.</p>
-				<div class="forgotten">
-					<form class="form-horizontal">
-						<div class="form-group">
-						<label class="control-label col-md-4" for="inputEmail">E-mail Address </label>
-							<div class="col-md-8">
-								<input type="text" id="inputEmail" placeholder="Email" class="form-control">
-							</div>
-						</div>
-					</form>
-						<p>
-						<button class="btn btn-primary" type="button">Continue</button>
-						</p>
-				</div>
+				<h2>Site Map</h2>
 			</div>
-		</div>		    
+		</div>
 		
-		
+		<div class="row sitemap registerbox">
+			<div class="col-md-12">
+				<ul>
+					<li><a href="Bedroom.html">Shop</a></li>
+					<li><a href="">Sliders</a>
+						<ul class="subtitle">
+							<li><a href="bootstrap-carousel.html">Bootstrap Carousel</a></li>
+							<li><a href="elastic-slider.html">Elastic Slider</a></li>
+							<li><a href="nivo-slider.html">Nivo Slider</a></li>
+							<li><a href="slice-box.html">Slicebox</a></li>
+							<li><a href="index.html">Flexslider</a></li>
+						</ul>
+					</li>
+					<li><a href="account.html">My Account</a></li>
+					<li><a href="">Pages</a>
+						<ul class="subtitle">
+							<li><a href="cart.html">Shopping Cart</a></li>
+							<li><a href="site-map.html">Site Map</a></li>
+							<li><a href="404.html">404 Error Page</a></li>
+							<li><a href="forgot-password.html">Lost Password</a></li>
+							<li><a href="search.html">Search</a></li>	
+						</ul>
+					</li>
+					<li><a href="checkout.html">Checkout</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="http://getbootstrap.com/getting-started/">Bootstrap Documentation</a></li>	
+				</ul>
+			</div>
+			
+		</div>
 		
 	</div>		
+	
 	
 	<div class="footer black">
 		<div class="container">

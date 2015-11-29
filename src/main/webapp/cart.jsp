@@ -1,61 +1,121 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"  pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
 <!doctype html>
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700' rel='stylesheet' type='text/css'/>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700' rel='stylesheet' type='text/css'/>
 	<link href='css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" type="text/css" href="css/camera.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--script type="text/javascript" src="https://getfirebug.com/firebug-lite-debug.js"></script-->	
-    <title>Page Not Found | Sapphire</title>
+	<title>Sapphire</title>
 </head>
 <body>
 <div class="page-container">
 	<div class="header">
 		<%@include  file="Navbar.jsp" %>
-	</div>
-
+			</div>
+		
     <div class="container">
-        
 		<div class="row">
 		    <div class="col-md-12">
 			    <div class="breadcrumbs">
 				    <ul class="breadcrumb">
                         <li><a href="index.html">Home</a> <span class="divider"></span></li>
-                        <li class="active">Page Not Found </li>
+                        <li class="active">Shopping Cart</li>
                     </ul>
 				</div>
 			</div>
-			
 		</div>
 		
-		<div class="row bp">
+		<div class="row">
 		    <div class="col-md-12">
+				<h2>Shopping Cart</h2>
 			</div>
 		</div>
-		<div class="row box padding">
-			<div class="col-md-6">
-				<h1 class="e404"><strong>[404]</strong></h1>
-			</div>
-			<div class="col-md-6">
-				<h1 class="page">Page can not be found <span class = "fa fa-frown-o"></span></h1>
-				<h6 class="e404">We are sorry, but the page you are looking for might have been removed, had its name changed or is temporarily unavailable.</h6>
+		
+		<div class="row">
+		    <div class="col-md-12">
+			<div class="cart-info">
+				<table class="table">
+					<thead>
+					    <tr>
+							<th class="image">Image</th>
+							<th>Product</th>
+							<th>Model</th>
+							<th>Price</th>
+							<th>Quantity</th>
+							<th class="total">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						    <td class="image"><img alt="IMAGE" src="products/dress33.jpg"></td>
+							<td class="name"><a href="product.html">Black Dress</a></td>
+							<td>Product 14</td>
+							<td>$130.00</td>
+							<td class="quantity">
+								<input type="text" size="1" value="1" name="quantity">
+								<input type="image" title="Update" alt="Update" src="img/update.png">
+								<input type="image" title="Remove" alt="Remove" src="img/remove.png">
+							</td>
+							<td class="total">$130.00</td>
+						</tr>
+						<tr>
+						    <td class="image"><img alt="IMAGE" src="products/dress11.jpg"></td>
+							<td class="name"><a href="product.html">Blue Dress</a></td>
+							<td>Product 17</td>
+							<td>$230.00</td>
+							<td class="quantity">
+								<input type="text" size="1" value="1" name="quantity">
+								<input type="image" title="Update" alt="Update" src="img/update.png">
+								<input type="image" title="Remove" alt="Remove" src="img/remove.png">
+							</td>
+							<td class="total">$230.00</td>
+						</tr>
+					</tbody>									
+				</table>
+            </div> 			
+		    </div>					
+		</div>
+		
+		<div class="row">
+		   
+		    <div class="col-sm-4 col-sm-offset-8">
+				<div class="cart-totals">
+					<table class="table">
+					    <tr>
+							<th>Cart Subtotal</th>
+							<td>$360.00</td>
+						</tr>
+					    <tr>
+							<th>Shipping</th>
+							<td>Free Shipping</td>
+						</tr>
+					    <tr>
+							<th><span>Order Total</span></th>
+							<td>$360.00</td>
+						</tr>					
+				</table>
 				<p>
-				<a class="btn btn-primary" href="index.html">
-					Get me back to homepage!
+				<a class="btn btn-primary" href="checkout.html">
+					Proceed to Checkout
 				</a>
 				</p>
+				</div>
+
 			</div>
-		</div>
 		
+		</div>
+	
+
 	</div>		
+
 
 	<div class="footer black">
 		<div class="container">
@@ -115,6 +175,7 @@
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/sapphire.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"  pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!doctype html>
 <html>
 <head>
@@ -8,11 +10,13 @@
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700' rel='stylesheet' type='text/css'/>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700' rel='stylesheet' type='text/css'/>
 	<link href='css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" type="text/css" href="css/camera.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--script type="text/javascript" src="https://getfirebug.com/firebug-lite-debug.js"></script-->	
-	<title>Sapphire</title>
+	<title>Office</title>
 </head>
 <body>
+<p id="filter">office</p>
 <div class="page-container">
 	<div class="header">
 		<nav class="navbar container">
@@ -150,76 +154,184 @@
 			</div><!-- /.navbar-collapse -->
 		</nav>
 	</div>
-
-		<div class="container">
-			<ul class="breadcrumb">
-					<li><a href="index.html">Home</a> <span class="divider"></span></li>
-					<li class="active">Product</li>
-			</ul>
-
-		    <h2>About Us</h2>
-
-		<div class="row registerbox">
+		
+    <div class="container">
+        
+		<div class="row">
 		    <div class="col-md-12">
-					<p class="text_about"> <strong>WE WANT TO BE THE BEST FURNITURE COMPANY</strong>
-
-<br>
-						This mission statement reflects the pride we have in our past and the desire and passion for the future. We will continuously provide the best products at the best prices accompanied by the best service in the industry
-
-						being the best and bringing the best to you is our relentless challenge	come and become a "one home" stockist, please contact us direct to find out more </p>
+			    <div class="breadcrumbs">
+				    <ul class="breadcrumb">
+                        <li><a href="index.html">Home</a> <span class="divider"></span></li>
+                        <li class="active">Clothing</li>
+                    </ul>
 				</div>
+			</div>
+			
 		</div>
 		
-		<div class="row registerbox">
-		    <div class="col-md-4">
-			    <img src="image/Bedroom-5.jpg" alt="banner" class="img-polaroid">
-			</div>
-		    <div class="col-md-4">
-			    <img src="image/Book%20shelf%20with%20study%20table.jpg" alt="banner1" class="img-polaroid">
-			</div>
-		    <div class="col-md-4">
-			    <img src="image/Dining%20room%20-2.jpg" alt="banner2" class="img-polaroid">
+		<div class="row">
+		    <div class="col-md-12">
+			    <div class="cat_header">
+				    <h2>Office</h2>
+			    </div>
+
 			</div>
 		</div>
 
-
-		
-		<div class="row registerbox">
-			<div class="col-md-12 text-center">
-				<h4>	<strong>What makes us different?</strong> </h4> <br>
+		<div class="row">
+			<div class="myProducts" id="myProducts">
 			</div>
 
-
-
-		    <div class="col-md-4">
-			    <div class="description">
-					<div align="center"> <span class="fa fa-truck fa-4x" style="color:deepskyblue" ></span>
-			    <h4>Direct from the factory</h4>
-					<p>direct from china </p>
-					</div>
-				</div>
+			<div class="myProducts">
 			</div>
-		    <div class="col-md-4">
-			    <div class="description">
-					<div align="center"> <span class="fa fa-gbp fa-4x" style="color:deepskyblue"  ></span>
-			    <h4>Best price</h4>
-					<p>just give me the moniessss</p>
-						</div>
-				</div>
+
+			<div class="myProducts">
 			</div>
-		    <div class="col-md-4">
-				<div class="description">
-					<div align="center"><span class="fa fa-truck fa-4x" style="color:deepskyblue"  ></span>
-			    <h4>Delivery right to your door</h4>
-					<p>...from china with love <span class="fa fa-heart" style="color:#ff0000"></span></p>
-						</div>
-				</div>
-			</div>		    
-		
 		</div>
 		
-   </div>		
-	
+		<div class="row">
+		    <div class="col-md-3">
+			    <div class="product">
+				    <div class="product_sale">Sale</div>
+
+				    <a href="product.html"><img alt="dress1" src="products/dress1home.jpg"></a>
+				    <div class="name">
+				    <a href="">Elegant Dress</a>
+				    </div>
+				    <div class="price">
+				    <p>$200.00</p>
+				    </div>
+				    <div class="addcart">
+				    <a href="">Add to cart</a>
+				    </div>
+				</div>
+			</div>
+		    <div class="col-md-3">
+			    <div class="product">
+				    <a href="product.html"><img alt="dres2" src="products/dress5home.jpg"></a>
+				    <div class="name">
+				    <a href="">Lace Dress</a>
+				    </div>
+				    <div class="price">
+				    <p>$250.00</p>
+				    </div>	
+				    <div class="addcart">
+				    <a href="">Add to cart</a>
+				    </div>						
+				</div>	
+			
+			</div>			
+		    <div class="col-md-3">
+			    <div class="product">
+				    <a href="product.html"><img alt="dress3" src="products/dress6home.jpg"></a>
+					<div class="name">
+				    <a href="">Floral Dress</a>
+				    </div>
+				    <div class="price">
+				    <p>$500.00</p>
+				    </div>
+				    <div class="addcart">
+				    <a href="">Add to cart</a>
+				    </div>	
+				</div>	
+			</div>		
+		    <div class="col-md-3">
+			    <div class="product">
+				    <a href="product.html"><img alt="dress4" src="products/dress2home.jpg"></a>
+				    <div class="name">
+				    <a href="">Black Dress</a>
+				    </div>
+				    <div class="price">
+				    <p>$150.00</p>
+				    </div>
+				    <div class="addcart">
+				    <a href="">Add to cart</a>
+				    </div>						
+				</div>	
+			</div>		
+		
+		</div>
+
+		<div class="row">
+		    <div class="col-md-3">
+			    <div class="product">
+				    <a href="product.html"><img alt="dress5" src="products/dress3home.jpg"></a>
+				    <div class="name">
+				    <a href="">Midi Dress</a>
+				    </div>
+				    <div class="price">
+				    <p>$50.00</p>
+				    </div>	
+				    <div class="addcart">
+				    <a href="">Add to cart</a>
+				    </div>	
+				</div>
+			
+			</div>
+		    <div class="col-md-3">
+			    <div class="product">
+					<div class="product_sale">Sale</div>	
+				    <a href="product.html"><img alt="dress6" src="products/dress4home.jpg"></a>
+				    <div class="name">
+				    <a href="">White Dress</a>
+				    </div>
+				    <div class="price">
+				    <p>$120.00</p>
+				    </div>	
+				    <div class="addcart">
+				    <a href="">Add to cart</a>
+				    </div>						
+				</div>			
+			</div>			
+		    <div class="col-md-3">
+			    <div class="product">
+				    <a href="product.html"><img alt="dress7" src="products/dress7home.jpg"></a>
+				    <div class="name">
+				    <a href="">Red Dress</a>
+				    </div>
+				    <div class="price">
+				    <p>$20.00</p>
+				    </div>
+				    <div class="addcart">
+				    <a href="">Add to cart</a>
+				    </div>						
+				</div>			
+			</div>		
+		    <div class="col-md-3">
+			    <div class="product">
+					<div class="product_sale">Sale</div>
+				    <a href="product.html"><img alt="dress8" src="products/dress8home.jpg"></a>
+				    <div class="name">
+				    <a href="">Evening Dress</a>
+				    </div>
+				    <div class="price">
+				    <p>$670.00</p>
+				    </div>	
+				    <div class="addcart">
+				    <a href="">Add to cart</a>
+				    </div>						
+				</div>				
+			</div>		
+		
+		</div>	
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="pagination pull-right">
+				  <li><a href="#">&laquo;</a></li>
+				  <li class="active"><a href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li><a href="#">&raquo;</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+	</div>		
+
+
 	<div class="footer black">
 		<div class="container">
 			<!-- div class="arrow"><b class="caret"></b></div -->
@@ -245,7 +357,16 @@
 							<li><a href="">Shipping</a></li>
 				        </ul>	
 					  </div>
-				</div>
+				</div>	
+
+		        <div class="col-md-3 twitter">
+					<div class="row">
+						<h3>Follow us</h3>
+						<script type="text/javascript" src="js/twitterFetcher_v9_min.js"></script>
+						<ul id="twitter_update_list"><li class="col-md-2">Twitter feed loading</li></ul>			
+						<script>twitterFetcher.fetch('256524641194098690', 'twitter_update_list', 2, true, true, false);</script> 
+					</div>				
+				</div>	
 
 				
 				<div class="col-md-3 social">

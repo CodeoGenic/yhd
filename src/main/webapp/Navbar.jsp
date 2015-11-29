@@ -54,24 +54,9 @@
 							  <li id="kitchen"><a class="kitchen" href="Catalog" class="ajax_right">Kitchen</a></li>
 							  <li id="living_room"><a class="living_loom" href="Living_Room.html" class="ajax_right">Living Room</a></li>
 							  <li id="office"><a class="office" href="Office.html" class="ajax_right">Office</a></li>
-							  <li class="divider"></li>
-							  <li class="dropdown-header">Shop by Item</li>
-							  <li><a class="sofas" href="Bedroom.html">Sofas</a></li>
-							  <li><a class="sofabeds"href="category_menu.html">Sofa Beds</a></li>
-							  <li><a class="beds" href="product" class="ajax_right">Beds</a></li>
-							  <li><a class="wardrobes" href="cart.html" class="ajax_right">Wardrobes</a></li>
-							  <li><a class="coffeetable" href="checkout.html" class="ajax_right">Coffee Tables</a></li>
-							  <li><a class="diningtables" href="checkout.html" class="ajax_right">Dining Tables</a></li>
-							  <li><a class="diningchairs" href="checkout.html" class="ajax_right">Dining Chairs</a></li>
-							  <li class="divider"></li>
-							  <li class="dropdown-submenu">
-
-
-						<a data-toggle="dropdown" class="dropdown-toggle" href="#">Blog</a>
-							  <ul class="dropdown-menu">
-								  <li><a href="blog.html" class="ajax_right">Blog</a></li>
-								  <li><a href="blog-post.html" class="ajax_right">Blog post</a></li>
-									  </ul>
+							  					  
+							  
+							 
 									 </li>
 								</ul>
 							  </li>
