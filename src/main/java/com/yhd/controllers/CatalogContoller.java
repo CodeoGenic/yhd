@@ -28,7 +28,6 @@ public class CatalogContoller {
 	@RequestMapping("Catalog") 
 	public ModelAndView  getPage (ModelAndView model, HttpServletRequest request){
 		List<Product>products = productRepository.findAll();
-		System.out.println(request.getAttribute("id"));
 		model.addObject("products", products );
 		model.setViewName("Catalog.jsp");
 		return model;

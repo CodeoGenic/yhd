@@ -193,13 +193,12 @@
 		
 		<div class="row">
 			<c:forEach items="${products}" var="product">
-			
 				 <div class="col-md-3">
 			    <div class="product">
 				    <div class="product_sale">Sale</div>
 				    <a id="${product.productID}" href="product?id=${product.productID}"><img  alt="${product.image}" src="${product.image}"></a>
 				    <div class="name">
-				    <a id="${product.productID}" href="${product.productName}"></a>
+				    <a id="${product.productID}" href="product?id=${product.productID}"></a>
 				    </div>
 				    <div class="price">
 				    <p>£${product.price}</p>

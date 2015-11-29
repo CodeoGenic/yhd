@@ -18,7 +18,7 @@ public class Product {
 	private String image;
 	private String productName;
 	private int price;
-	private ArrayList<Image> images;
+	private String [] images;
 	private int sockLevel;
 	private int rating;
 	private String review;
@@ -30,9 +30,9 @@ public class Product {
 
 	}
 
-	public Product(int productID, String color, int size, String description, String image, String productName,
+	public <E> Product(int productID, String color, int size, String description, String image, String productName,
 			int price, int sockLevel, int rating, String review, String customerName, String customerEmail,
-			int productInt) {
+			int productInt , E... images) {
 		this.productID = productID;
 		this.color = color;
 		this.dimensions = size;
@@ -46,6 +46,7 @@ public class Product {
 		this.customerName = customerName;
 		this.customerEmail = customerEmail;
 		this.productType = productInt;
+		this.images =  (String[]) images;
 	}
 
 	public Product(int id, String img, String name, int price, int sockLevel) {
@@ -57,15 +58,7 @@ public class Product {
 
 	}
 
-	public Product(int id, String img, String name, int price, ArrayList<Image> images, int sockLevel) {
-		productID = id;
-		image = img;
-		productName = name;
-		this.price = price;
-		this.images = images;
-		this.setSockLevel(sockLevel);
-
-	}
+	
 
 	public String getImage() {
 		return image;
@@ -91,11 +84,11 @@ public class Product {
 		this.price = price;
 	}
 
-	public ArrayList<Image> getImages() {
+	public String [] getImages() {
 		return images;
 	}
 
-	public void setImages(ArrayList<Image> images) {
+	public void setImages(String [] images) {
 		this.images = images;
 	}
 

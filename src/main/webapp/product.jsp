@@ -111,14 +111,14 @@
 								</thead>
 								<tbody>
 								<tr>
-									<td class="image"><img alt="IMAGE" class="img-responsive" src="products/bedroom4.jpg"></td>
+									<td class="image"><img alt="IMAGE" class="img-responsive" src="products/bedroom4"></td>
 									<td class="name"><a href="project.html">Black Dress</a></td>
 									<td class="quantity">x&nbsp;3</td>
 									<td class="total">$130.00</td>
 									<td class="remove"><img src="image/remove-small.png" alt="Remove" title="Remove"></td>
 								</tr>
 								<tr>
-									<td class="image"><img alt="IMAGE" class="img-responsive" src="products/dress11.jpg"></td>
+									<td class="image"><img alt="IMAGE" class="img-responsive" src="products/dress11"></td>
 									<td class="name"><a href="project.html">Blue Dress</a></td>
 									<td class="quantity">x&nbsp;3</td>
 									<td class="total">$230.00</td>
@@ -166,10 +166,9 @@
 					
 				<div class="image"><a class="cloud-zoom" rel="adjustX: 0, adjustY:0" id='zoom1' href="${products[0].image}" title="Nano"><img src="${products[0].image}" title="Nano" alt="Nano" id="image" /></a></div>
 				<div class="image-additional">
-					<a title="Dress" rel="useZoom: 'zoom1', smallImage: 'products/dress1home.jpg'" class="cloud-zoom-gallery" href="products/dress1home.jpg"><img alt="Dress" title="Dress" src="products/dress1home.jpg"></a>
-					<a title="Dress" rel="useZoom: 'zoom1', smallImage: 'products/dress5home.jpg'" class="cloud-zoom-gallery" href="products/dress5home.jpg"><img alt="Dress" title="Dress" src="products/dress5home.jpg"></a>
-					<a title="Dress" rel="useZoom: 'zoom1', smallImage: 'products/dress6home.jpg'" class="cloud-zoom-gallery" href="products/dress6home.jpg"><img alt="Dress" title="Dress" src="products/dress6home.jpg"></a>
-					<a title="Dress" rel="useZoom: 'zoom1', smallImage: 'products/dress4home.jpg'" class="cloud-zoom-gallery" href="products/dress4home.jpg"><img alt="Dress" title="Dress" src="products/dress4home.jpg"></a>
+					<c:forEach items="${products[0].images}" var="image" >
+					<a title="Dress" rel="useZoom: 'zoom1', smallImage: '${image}'" class="cloud-zoom-gallery" href="${image}"><img alt="Dress" title="Dress" src="${image}"></a>
+					</c:forEach>
 				  </div>
   			</div>
 		    <div class="col-md-6">
@@ -182,10 +181,11 @@
 							<li><span>Availability: </span>In Stock</li>
 						</ul>
 					
-		    	
+		    		
 					<div class="price">
 						Price <span class="strike"><c:out value="£${products[0].price}"></c:out></span> <strong>£${products[0].price}</strong>
 					</div>
+					
 					<!--
 						<span class="price-tax">Ex Tax: $400.00</span>
 						    <div class="control-group">
@@ -212,7 +212,7 @@
 							</div> -->
 
 					<select class="selectpicker" data-width="150px">
-						<option>Red</option>
+						<option><c:out value="${products[0].color}"></c:out></option>
 						<option>Blue</option>
 						<option>Green</option>
 					</select>
@@ -236,7 +236,7 @@
 						<li><a href="#messages">Reviews</a></li>
 					</ul>
 					<div class="tab-content">
-						<div class="tab-pane active" id="home">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then </div>
+						<div class="tab-pane active" id="home">${products[0].description}</div>
 						<div class="tab-pane" id="profile">
 							<table class="table specs">
 							    <tr>
@@ -290,13 +290,13 @@
 				
 		<c:forEach items="${related}" var="product">
 			
-				<div class="col-md-12">
+				<div class="row-md-5">
 		    <div class="col-md-3">
 			    <div class="product">
 					<div class="product_sale">Sale</div>
-				    <a href="product"><img alt="${product.image}" src="${product.image}"></a>
+				    <a href="product?id=${product.productID}"><img alt="${product.image}" src="${product.image}"></a>
 					<div class="name">
-				    <a href="">${product.productName}</a>
+				    <a href="product?id=${product.productID}">${product.productName}</a>
 				    </div>
 				    <div class="price">
 				    <p>£${product.price}</p>
