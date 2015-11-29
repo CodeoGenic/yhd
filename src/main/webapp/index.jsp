@@ -33,7 +33,7 @@
 				</a>
 			  </div>
 
-				<img src="img/YHD.png" alt="Sapphire">
+				<img src="img/YHD.png" alt="YHD">
 
 
 			<!--<div class="row text-right">-->
