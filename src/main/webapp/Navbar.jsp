@@ -50,8 +50,8 @@
 
 						  <ul class="dropdown-menu">
 							  <li class="dropdown-header">Shop by...</li>
-							  <li id="bedroom"><a onclick=myfunction("bedroom") class="bedroom" href="Bedroom.html">Bedroom</a></li>
-							  <li id="kitchen"><a class="kitchen" href="Catalog" class="ajax_right">Kitchen</a></li>
+							  <li id="bedroom"><a class="bedroom" href="type?type=0">Bedroom</a></li>
+							  <li id="kitchen"><a class="kitchen" href="type?type=0" class="ajax_right">Kitchen</a></li>
 							  <li id="living_room"><a class="living_loom" href="Living_Room.html" class="ajax_right">Living Room</a></li>
 							  <li id="office"><a class="office" href="Office.html" class="ajax_right">Office</a></li>
 							  					  

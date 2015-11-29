@@ -25,6 +25,7 @@ public class Product {
 	private String customerName;
 	private String customerEmail;
 	private int productType;
+	private String subType; 
 
 	public Product() {
 
@@ -32,7 +33,7 @@ public class Product {
 
 	public <E> Product(int productID, String color, int size, String description, String image, String productName,
 			int price, int sockLevel, int rating, String review, String customerName, String customerEmail,
-			int productInt , E... images) {
+			int productInt ,String subType, E... images ) {
 		this.productID = productID;
 		this.color = color;
 		this.dimensions = size;
@@ -46,7 +47,9 @@ public class Product {
 		this.customerName = customerName;
 		this.customerEmail = customerEmail;
 		this.productType = productInt;
+		this.setSubType(subType);
 		this.images =  (String[]) images;
+		
 	}
 
 	public Product(int id, String img, String name, int price, int sockLevel) {
@@ -170,6 +173,14 @@ public class Product {
 
 	public void setProductType(int productType) {
 		this.productType = productType;
+	}
+
+	public String getSubType() {
+		return subType;
+	}
+
+	public void setSubType(String subType) {
+		this.subType = subType;
 	}
 
 }

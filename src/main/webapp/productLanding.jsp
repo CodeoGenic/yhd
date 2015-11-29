@@ -20,7 +20,7 @@
 
 
 <body>
-<p id="filter">bedroom</p>
+<p id="filter"></p>
 <div class="page-container">
 	<div class="header">
 		<nav class="navbar container">
@@ -61,10 +61,10 @@
 						<h3>Beds</h3>
 						<ul>
 							<!--<li class="active"><a href="Bedroom.html">trendy</a></li>-->
-							<li><a href="Bedroom.html">Single</a></li>
-							<li><a href="Bedroom.html">Double</a></li>
-							<li><a href="Bedroom.html">King</a></li>
-							<li><a href="Bedroom.html">Queen</a></li>
+							<li><a href="#">${Categories[0]}</a></li>
+							<li><a href="#">${Categories[1]}</a></li>
+							<li><a href="#">${Categories[2]}</a></li>
+							<li><a href="#">${Categories[3]}</a></li>
 						</ul>
 
 						<h3>Wardrobes</h3>
@@ -166,51 +166,17 @@
 			<div class="dashboard clearfix">
 				<ul class="tiles">
 					<div class="col1 clearfix">
+					
+					<c:forEach items="${products}" var="product">
+				
 						<li class="tile tile-big tile-1 slideTextUp" data-page-type="r-page" data-page-name="random-r-page">
 							<figure>
-								<img src="image/Bedroom-2.jpg"/>
+								<img src="${product.image}"/>
 								<div><p>Shop now</p></div>
 							</figure>
 						</li>
+				</c:forEach>
 
-
-						<li class="tile tile-big tile-4 fig-tile" data-page-type="r-page" data-page-name="random-r-page">
-							<figure>
-								<img src="image/webbed1.jpg" />
-								<figcaption class="tile-caption caption-left">View our bed collection</figcaption>
-							</figure>
-						</li>
-						<li class="tile tile-big tile-4 fig-tile" data-page-type="r-page" data-page-name="random-r-page">
-							<figure>
-								<img src="image/webbed1.jpg" />
-								<figcaption class="tile-caption caption-left"> View our wardrobe collection <span class="icon-instagram"></span></figcaption>
-							</figure>
-						</li>
-
-					</div>
-
-					<div class="col2 clearfix">
-
-						<li class="tile tile-big tile-6 slideTextLeft" data-page-type="r-page" data-page-name="random-r-page">
-							<!--<div><p><span class="icon-skype"></span>Skype</p></div>-->
-							<figure>
-
-								<img src="image/webbed1.jpg" />
-								<div><p>Shop now</p></div>
-							</figure>
-							<!--add figure tag to format image properly-->
-
-						</li>
-
-						<li class="tile tile-big tile-4 fig-tile" data-page-type="r-page" data-page-name="random-r-page">
-							<figure>
-								<img src="image/webbed1.jpg" />
-								<figcaption class="tile-caption caption-left">View our bed collection</figcaption>
-							</figure>
-						</li>
-						<li class="tile tile-big tile-5" data-page-type="r-page" data-page-name="random-r-page">
-							<div><p><span class="icon-chrome"></span>20% sale</p></div>
-						</li>
 
 					</div>
 				</ul>
@@ -225,67 +191,13 @@
 		<div class="dashboard clearfix">
 			<ul class="tiles">
 				<div class="col1 clearfix">
-					<li class="tile tile-big tile-1 slideTextUp" data-page-type="r-page" data-page-name="random-r-page">
+					
 
-						<figure>
-							<img src="image/webbed1.jpg " />
-							<div><p>View all tasks</p></div>
-						</figure>
-
-					</li>
-
-
-					<li class="tile tile-small tile tile-2 slideTextRight" data-page-type="s-page" data-page-name ="random-restored-page">
-						<div><p class="icon-arrow-right">Go!</p></div>
-						<div><p>Tile's content slides right. Page opens from left</p></div>
-					</li>
-					<li class="tile tile-small last tile-3" data-page-type="r-page" data-page-name="random-r-page">
-						<p class="icon-calendar-alt-fill"></p>
-					</li>
-					<li class="tile tile-big tile-4 fig-tile" data-page-type="r-page" data-page-name="random-r-page">
-						<figure>
-							<img src="image/Bedroom.jpg" />
-							<figcaption class="tile-caption caption-left">View our bed collection</figcaption>
-						</figure>
-					</li>
+					
 				</div>
 
 				<div class="col2 clearfix">
-					<li class="tile tile-big tile-5" data-page-type="r-page" data-page-name="random-r-page">
-						<div><p><span class="icon-chrome"></span>20% sale</p></div>
-					</li>
-					<li class="tile tile-big tile-6 slideTextLeft" data-page-type="r-page" data-page-name="random-r-page">
-						<!--<div><p><span class="icon-skype"></span>Skype</p></div>-->
-						<figure>
-
-							<img src="image/Bedroom.jpg" />
-							<div><p>Make a Call</p></div>
-						</figure>
-						<!--add figure tag to format image properly-->
-
-					</li>
-
-
-					<!--Tiles with a 3D effect should have the following structure:
-                        1) a container inside the tile with class of .faces
-                        2) 2 figure elements, one with class .front and the other with class .back-->
-					<li class="tile tile-small tile-7 rotate3d rotate3dX" data-page-type="r-page" data-page-name="random-r-page">
-						<div class="faces">
-
-							<div class="front"><span class="icon-picassa"></span></div>
-							<div class="back"><img src="image/Bedroom.jpg" /></div>
-						</div>
-					</li>
-					<li class="tile tile-small last tile-8 rotate3d rotate3dY" data-page-type="r-page" data-page-name="random-r-page">
-						<div class="faces">
-							<div class="front"><span class="icon-instagram"></span></div>
-							<div class="back"><p>uygyugtg</p></div>
-						</div>
-					</li>
-				</div>
-
-
-			</ul>
+				
 		</div><!--end dashboard-->
 			</div>
 

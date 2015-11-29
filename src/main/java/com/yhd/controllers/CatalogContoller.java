@@ -28,10 +28,37 @@ public class CatalogContoller {
 	@RequestMapping("Catalog") 
 	public ModelAndView  getPage (ModelAndView model, HttpServletRequest request){
 		List<Product>products = productRepository.findAll();
+		
 		model.addObject("products", products );
 		model.setViewName("Catalog.jsp");
 		return model;
 		
+	}
+	
+	
+	@RequestMapping(value="type" ,method = RequestMethod.GET)
+	public ModelAndView getProductsByType(ModelAndView model, @RequestParam("type") int type){
+		List<Product>products = productRepository.findAll();
+		ArrayList<Product> related = new ArrayList<Product>();
+		for(int i =0; i<products.size(); i++){
+			if(products.get(i).getProductType()==type){
+					related.add(products.get(i));
+			}
+		}
+		if(type==0){
+		String [] cat = new String[4];
+		cat[0]="Single";
+		cat[1]="Double";
+		cat[2]="King";
+		cat[3] = "Queen";
+		model.addObject("Title", "Bedroom");
+		model.addObject("Beds", "Beds");
+		model.addObject("Categories", cat );
+		model.addObject("products", products);
+		model.setViewName("productLanding.jsp");
+		return model;
+		}	
+		return model;
 	}
 	
 	/**
