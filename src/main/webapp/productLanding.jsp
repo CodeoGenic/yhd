@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="css/windows8tile.css">
 	<script src="js/modernizr-1.5.min.js"></script>
     <!--script type="text/javascript" src="https://getfirebug.com/firebug-lite-debug.js"></script-->	
-	<title>Bedroom</title>
+	<title><c:out>${Title}</c:out></title>
 </head>
 
 
