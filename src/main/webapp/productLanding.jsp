@@ -34,7 +34,7 @@
 		    <div class="col-md-12">
 			    <div class="breadcrumbs">
 				    <ul class="breadcrumb">
-                        <li><a href="index.html">Home</a> <span class="divider"></span></li>
+                        <li><a href="/">Home</a> <span class="divider"></span></li>
                         <li class="active">Bedroom</li>
                     </ul>
 				</div>
