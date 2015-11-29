@@ -168,13 +168,15 @@
 					<div class="col1 clearfix">
 					
 					<c:forEach items="${products}" var="product">
-				
-						<li class="tile tile-big tile-1 slideTextUp" data-page-type="r-page" data-page-name="random-r-page">
+				<a href = "#">
+						<li class="tile tile-big tile-1 slideTextUp"  >
 							<figure>
 								<img src="${product.image}"/>
 								<div><p>Shop now</p></div>
 							</figure>
 						</li>
+						
+						 </a>
 				</c:forEach>
 
 
