@@ -130,7 +130,7 @@
 						</div>
 						<div class="tab-pane" id="messages">
 						    <p>There are no reviews yet, would you like to <a href="#review_btn">submit yours?</a></p>
-							<h3>Be the first to review “Blue Dress” </h3>
+							<h3>Be the first to review this item </h3>
 						<form>
 							<fieldset>
 								<label>Name<span class="required">*</span></label>
@@ -178,44 +178,7 @@
 		</div>
 	</div>		
 
-	<div id="social_band">
-		<div class="container">
-		<div class="row">
-		<div id="social_about" class="col-md-4">
-			<h3>About</h3>
-			<div>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/><br/> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.			</div>
-		</div>
-		<div id="social_twitter" class="col-md-4">
-			<h3>Twitter</h3>
-			<div>
-				<ul id="twitter_update_list"><li>Twitter feed loading</li></ul>			
-				<script type="text/javascript" src="js/twitterFetcher_v9_min.js"></script>
-				<script>twitterFetcher.fetch('256524641194098690', 'twitter_update_list', 2, true, true, false);</script> 
-
-				<!--
-				<script type="text/javascript" src="https://api.twitter.com/1/statuses/user_timeline.json?screen_name=NicoleThemes&amp;callback=twitterCallback2&amp;count=3"></script>			
-				<a href="http://twitter.com/#!/NicoleThemes" id="twitter_follow">Follow us on twitter</a>
-				-->
-			</div>
-		</div>
-		<div id="social_facebook" class="col-md-4">
-			<h3>Facebook</h3>
-			<div>
-			<div id="fb-root"></div>
-			<script>(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = "https://connect.facebook.net/en_US/all.js#xfbml=1";
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
-			<div class="fb-like-box" data-href="https://www.facebook.com/201498429982413" data-width="300" data-color-scheme="light"  data-show-faces="true" data-stream="false" data-header="false" data-border-color="#ffffff" show_border=false></div>
-			</div>		
-		</div>
-	</div>
-	</div>
-	</div>
+	
 	
 	<div class="footer black">
 		<div class="container">

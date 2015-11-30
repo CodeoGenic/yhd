@@ -29,6 +29,49 @@
 /*	Default styles
 /*-----------------------------------------------------------------------------------*/
 
+.menu_simple ul {
+
+   margin: 0;
+   padding: 0;
+   width:185px;
+   list-style-type: none;
+
+  }
+
+  .menu_simple ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10.5px 11px;
+  background-color: #464646;
+  display:block;
+
+  }
+
+  .menu_simple ul li a:visited {
+  color: white;
+  }
+
+  .menu_simple ul li a:hover, .menu_simple ul li .current {
+  color: white;
+  background-color: #2096ff;
+  }
+
+.menu_simple h3{
+    font-size:15px;
+    margin-top:10px;
+    margin-bottom:0px;
+    color:#ffffff;
+    border:inherit;
+}
+
+.menu_simple h3:hover, .menu_simple h3.current {
+    color: white;
+    background-color: #2096ff;
+}
+
+
+/*above code is being used for testing*/
+
 
 
 body
@@ -179,15 +222,16 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 .btn-primary
 {
-	background-color:#4DC7EC;
-	color:#fff;
+	background-color:#ffffff;
+	color:#000000;
 	padding:12px 25px 10px;
 	transition:all 0.4s ease 0s;
-}
+	border-color: #000000;
+    border-style: double}
 
 .btn-primary:hover
 {
-   background-color:#aaa;
+   background-color:#000000;
 }
 
 .buttons .right 

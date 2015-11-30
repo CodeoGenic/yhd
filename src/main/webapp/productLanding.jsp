@@ -41,9 +41,32 @@
 			</div>
 			
 		</div>
+		<!---->
+
+		
+		<div class="menu_simple">
+			<ul>
+				<li><a href="#"><h3>Beds</h3></a></li>				
+				<!--<li class="active"><a href="Bedroom.html">trendy</a></li>-->
+				<li><a href="#">${Categories[0]}</a></li>
+				<li><a href="#">${Categories[1]}</a></li>
+				<li><a href="#">${Categories[2]}</a></li>
+				<li><a href="#">${Categories[3]}</a></li>
+						
+
+				<li><a href="#"><h3>Wardrobes</h3></a></li>
+				<li><a href="#">Single</a></li>
+				<li><a href="#">Double</a></li>
+				<li><a href="#"><h3>Drawers</h3></a></li>
+				<li><a href="#">Two chest</a></li>
+				<li><a href="#">Three chest</a></li>
+			</ul>
+		</div>
+		
+		<!-- Code below was the old side-menu -->
 		
 		
-		   <h3>Beds</h3>
+		  <!--  <h3>Beds</h3>
 				<ul>
 					<li><a href="#">${Categories[0]}</a></li>
 					<li><a href="#">${Categories[1]}</a></li>
@@ -62,27 +85,16 @@
 				<ul>
 					<li><a href="Bedroom.html">two chest</a></li>
 					<li><a href="Bedroom.html">three chest</a></li>
-				</ul>
+				</ul> -->
+		
+		
+				
 		
 		
 		
-		
-		<div class="row">
-      <div class="col-sm-2">
-       
+        
+				<!-- <div id="metro-array" style="display: block;">
 
-          
-      </div>
-		
-		
-		
-        <div class="row ">
-			<div class="col-md-8">
-				<div id="metro-array" style="display: block;">
-
-
-					<!-- Simple grid for the demo! None of these styles are required, thats just how I've styled my tiles -->
-					<!-- The only important thing is class="metro-tile" -->
 
 					<div style="width: 700px; height: 400px; float: none ">
 
@@ -94,8 +106,29 @@
 						</a>
 
 					</div>
-					</div>
-</div>
+					</div> -->
+
+
+<!--tiles start from here-->
+	<div class="container">
+		<div class="row">	
+					<div class="dashboard clearfix">		
+			<c:forEach items="${products}" var="product">
+			<div class="col-md-3">
+				<a href = "product?id=${product.productID}"> 
+				<div id="livefilter-list" class="tiles"><div class="tile tile-fig tile-4">
+					<figure><img src="${product.image}"><figcaption class="tile-caption caption-left">£<c:out value="${product.price}"></c:out></figcaption>
+					</figure></div>	
+			
+				 </div>
+					</a>
+				 </div>
+			</c:forEach>
+				
+		</div>
+		</div>		  
+		</div>	
+
 
 <script>
 	$(function() {
@@ -106,40 +139,9 @@
 </script>
 
 
-<!--tiles start from here-->
-
-		<div class="row">	
-					<div class="dashboard clearfix">		
-			<c:forEach items="${products}" var="product">
-			<div class="col-md-3">
-				<a href = "product?id=${product.productID}"> 
-				<div  id="livefilter-list" class="tiles"><div class="tile tile-fig tile-4">
-					<figure><img src="${product.image}"><figcaption class="tile-caption caption-left">£<c:out value="${product.price}"></c:out></figcaption>
-					</figure></div>	
-			
-				 </div>
-					</a>
-				 </div>
-			</c:forEach>
-				
-		</div>
-		</div>
-		
-		
-	
-		  
-		</div>	
-
-
 		
 				
 				
-
-			
-
-
-
-
 	<div class="footer black">
 		<div class="container">
 			<!-- div class="arrow"><b class="caret"></b></div -->
