@@ -15,7 +15,7 @@ public class DataConfig {
 
 	@Bean
 	public MongoDbFactory mongoDbFactory() throws Exception {
-		return new SimpleMongoDbFactory(new MongoClient("25.98.73.196"), "YHD");
+		return new SimpleMongoDbFactory(new MongoClient("25.124.3.132"), "YHD");
 	}
 	
 	@Bean
