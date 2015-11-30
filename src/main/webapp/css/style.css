@@ -29,6 +29,25 @@
 /*	Default styles
 /*-----------------------------------------------------------------------------------*/
 
+/*This is to position content relative to each other  */
+.parent {
+  width:200px;
+  height:480px;
+  background-color:#00000000;
+  position:relative;
+}
+ 
+.child {
+  width:700px;
+  height:500px;
+  background-color:#00000000;
+  position:absolute;
+  top:0px;
+  right:0px;
+}
+
+
+
 .menu_simple ul {
 
    margin: 0;
