@@ -168,7 +168,7 @@
 					<div class="col1 clearfix">
 					
 					<c:forEach items="${products}" var="product">
-				<a href = "#">
+				<a href = "product?id=${product.productID}">
 						<li class="tile tile-big tile-1 slideTextUp"  >
 							<figure>
 								<img src="${product.image}"/>
