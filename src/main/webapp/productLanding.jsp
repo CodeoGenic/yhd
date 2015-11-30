@@ -96,7 +96,7 @@
 						<a class="metro-tile" href="Bedroom.html" style="cursor: pointer; width: 700px; height: 400px; display: block; background-image: url('image/Bedroom-5.jpg'); color: #00d2fe; margin-bottom: 10px;">
 
 							<div class="row text-center" >
-								<p2>Bedroom</p2>
+								<p2><c:out value="${Title}"></c:out></p2>
 							</div>
 						</a>
 
@@ -131,79 +131,40 @@
 
 
 
-		<div class="demo-wrapper">
-			<!-- classnames for the pages should include: 1) type of page 2) page name-->
-			<div class="s-page random-restored-page">
-				<h2 class="page-title">Some minimized App</h2>
-				<div class="close-button s-close-button">x</div>
-			</div>
-			<div class="s-page custom-page">
-				<h2 class="page-title">Thank You!</h2>
-				<div class="close-button s-close-button">x</div>
-			</div>
-			<div class="r-page random-r-page">
-
-				<div class="page-content" id="myProducts">
-					<!--<h2 class="page-title">App Screen</h2>-->
-					<!--<p>Chew iPad power cord chew iPad power cord attack feet chase mice leave dead animals as gifts and stick butt in face chew iPad power cord. Chase mice. Run in circles use lap as chair why must they do that. Intrigued by the shower destroy couch leave hair everywhere sleep on keyboard chew iPad power cord. Use lap as chair. Missing until dinner time stand in front of the computer screen, intently sniff hand. Find something else more interesting. Destroy couch play time so inspect anything brought into the house hate dog burrow under covers. Sleep on keyboard destroy couch so hate dog so hide when guests come over. Chase mice destroy couch lick butt throwup on your pillow use lap as chair yet intrigued by the shower but climb leg. Stare at ceiling make muffins or hunt anything that moves claw drapes. Intently sniff hand intrigued by the shower. Why must they do that. Cat snacks leave dead animals as gifts or inspect anything brought into the house sweet beast so stare at ceiling give attitude. Flop over claw drapes but sun bathe lick butt, and chase mice. Rub face on everything lick butt leave hair everywhere lick butt, missing until dinner time for use lap as chair lick butt. Make muffins leave dead animals as gifts play time. Chew foot intrigued by the shower stare at ceiling inspect anything brought into the house yet hopped up on goofballs.-->
-
-						<!--Hunt anything that moves intently sniff hand for hunt anything that moves play time. Chew foot climb leg throwup on your pillow so lick butt yet make muffins hate dog. Intrigued by the shower. Intently sniff hand shake treat bag. Cat snacks burrow under covers make muffins but all of a sudden go crazy find something else more interesting. Flop over chase mice. Give attitude. Inspect anything brought into the house. Stick butt in face sun bathe so find something else more interesting and intrigued by the shower. Rub face on everything use lap as chair.-->
-
-						<!--Under the bed claw drapes chase mice but leave hair everywhere yet make muffins yet claw drapes. Use lap as chair. Find something else more interesting stretch for under the bed. Nap all day intrigued by the shower, hate dog sweet beast intently sniff hand so hate dog nap all day. Swat at dog hide when guests come over and mark territory chase mice for cat snacks. Use lap as chair. Lick butt throwup on your pillow need to chase tail.-->
-
-						<!--Mark territory. Stick butt in face shake treat bag yet hunt anything that moves, yet hopped up on goofballs yet stare at ceiling under the bed. Give attitude chase imaginary bugs stretch so hunt anything that moves so hide when guests come over but intrigued by the shower find something else more interesting. Make muffins behind the couch for chew foot. Sweet beast flop over but throwup on your pillow. Intently sniff hand use lap as chair and missing until dinner time and chase imaginary bugs.-->
-					<!--</p>-->
-				</div>
-
-				<div class="close-button r-close-button">x</div>x
-			</div>
-
-
-
-
 
 <!--tiles start from here-->
-			<div class="dashboard clearfix">
-				<ul class="tiles">
-					<div class="col1 clearfix">
-					
-					<c:forEach items="${products}" var="product">
+
+		<div class="row">	
+					<div class="dashboard clearfix">		
+			<c:forEach items="${products}" var="product">
+			<div class="col-md-3">
 				<a href = "product?id=${product.productID}">
-						<li class="tile tile-big tile-1 slideTextUp"  >
+				<ul class="tiles"><li class="tile tile-fig tile-4">
+					<figure><img src="${product.image}"><figcaption class="tile-caption caption-left">b</figcaption>
+					</figure></li>	
+			
+				 </ul>
+				 </a>	
+				 </div>
+			</c:forEach>
+				
+		</div>
+		</div>
+		
+		
+	
+		  
+		</div>	
 
-							<figure>
-								<img src="${product.image}"/>
-								<figcaption class="tile-caption caption-left">View this item now</figcaption>
-							</figure>
-						</li>
-						
-						 </a>
-				</c:forEach>
+
+		
 				
 				
 
-					</div>
-				</ul>
-			</div><!--end dashboard-->
-
-			<!--new tiles above-->
+			
 
 
 
-
-
-		<div class="dashboard clearfix">
-			<ul class="tiles">
-				<div class="col1 clearfix">
-					
-
-					
-				</div>
-
-				<div class="col2 clearfix">
-				
-		</div><!--end dashboard-->
-			</div>
 
 	<div class="footer black">
 		<div class="container">
