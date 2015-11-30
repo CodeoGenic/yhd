@@ -138,13 +138,13 @@
 					<div class="dashboard clearfix">		
 			<c:forEach items="${products}" var="product">
 			<div class="col-md-3">
-				<a href = "product?id=${product.productID}">
-				<ul class="tiles"><li class="tile tile-fig tile-4">
-					<figure><img src="${product.image}"><figcaption class="tile-caption caption-left">b</figcaption>
-					</figure></li>	
+				<a href = "product?id=${product.productID}"> 
+				<div class="tiles"><div class="tile tile-fig tile-4">
+					<figure><img src="${product.image}"><figcaption class="tile-caption caption-left">£<c:out value="${product.price}"></c:out></figcaption>
+					</figure></div>	
 			
-				 </ul>
-				 </a>	
+				 </div>
+					</a>
 				 </div>
 			</c:forEach>
 				
