@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/windows8tile.css">
 	<script src="js/modernizr-1.5.min.js"></script>
+	<script src="js/jquery.liveFilter.js"></script>
     <!--script type="text/javascript" src="https://getfirebug.com/firebug-lite-debug.js"></script-->	
 	<title><c:out value="${Title}"></c:out></title>
 </head>
@@ -23,7 +24,6 @@
 <p id="filter"></p>
 <div class="page-container">
 	<div class="header">
-		<nav class="navbar container">
 
 			<%@include  file="Navbar.jsp" %>
 	</div>
@@ -65,39 +65,37 @@
 		</div>
 		
 		
+		<!-- Code below was the old side-menu -->
 		
+		
+		  <!--  <h3>Beds</h3>
+				<ul>
+					<li><a href="#">${Categories[0]}</a></li>
+					<li><a href="#">${Categories[1]}</a></li>
+					<li><a href="#">${Categories[2]}</a></li>
+					<li><a href="#">${Categories[3]}</a></li>
+				</ul>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 col-sm-3 col-lg-3 left-menu">
-					<div class="">
-						<h3>Beds</h3>
-						<ul>
-							<!--<li class="active"><a href="Bedroom.html">trendy</a></li>-->
-							<li><a href="#">${Categories[0]}</a></li>
-							<li><a href="#">${Categories[1]}</a></li>
-							<li><a href="#">${Categories[2]}</a></li>
-							<li><a href="#">${Categories[3]}</a></li>
-						</ul>
+				<h3>Wardrobes</h3>
+				<ul>
+					<li><a href="Bedroom.html">Single door</a></li>
+					<li><a href="Bedroom.html">Double door</a></li>
+					<li><a href="Bedroom.html">Triple door</a></li>
+				</ul>
 
-						<h3>Wardrobes</h3>
-						<ul>
-							<li><a href="Bedroom.html">Single door</a></li>
-							<li><a href="Bedroom.html">Double door</a></li>
-							<li><a href="Bedroom.html">Triple door</a></li>
-						</ul>
-
-						<h3>Drawers</h3>
-						<ul>
-							<li><a href="Bedroom.html">two chest</a></li>
-							<li><a href="Bedroom.html">three chest</a></li>
-						</ul>
-					</div>
-					</div>
-<div class="container">
+				<h3>Drawers</h3>
+				<ul>
+					<li><a href="Bedroom.html">two chest</a></li>
+					<li><a href="Bedroom.html">three chest</a></li>
+				</ul> -->
+		
+		
+				
+		
+		
+		
         <div class="row ">
 			<div class="col-md-8">
-
 				<div id="metro-array" style="display: block;">
 
 
@@ -115,34 +113,15 @@
 
 					</div>
 					</div>
-
-
-					<!--<div class="row">-->
-							<!--<div class="myProducts" id="myProducts">-->
-								<!--&lt;!&ndash;<div >&ndash;&gt;-->
-
-								<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-							<!--</div>-->
-					    	<!--</div>-->
-		      	          	<!--</div>-->
-
-		                    <!--</div>-->
-				        <!--</div>-->
-
-
-
-
-			<!--<div class="myProducts">-->
-			<!--</div>-->
-
-			<!--<div class="myProducts">-->
-			<!--</div>-->
-		<!--</div>-->
-
 </div>
 
-
+<script>
+	$(function() {
+		$('#livefilter-list').liveFilter('#livefilter-input', 'div', {
+			filterChildSelector : 'a'
+		});
+	});
+</script>
 
 
 <!--tiles start from here-->
@@ -152,7 +131,7 @@
 			<c:forEach items="${products}" var="product">
 			<div class="col-md-3">
 				<a href = "product?id=${product.productID}"> 
-				<div class="tiles"><div class="tile tile-fig tile-4">
+				<div  id="livefilter-list" class="tiles"><div class="tile tile-fig tile-4">
 					<figure><img src="${product.image}"><figcaption class="tile-caption caption-left">£<c:out value="${product.price}"></c:out></figcaption>
 					</figure></div>	
 			
@@ -227,7 +206,8 @@
 		    </div>	
 	</div>
 	</div>	
-</div>
+
+	</div>
 	</div>
 
 <!-- script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -239,6 +219,7 @@
 <script type="text/javascript" src="js/sapphire.js"></script>
 <script type="text/javascript" src="js/windows8tile.js"></script>
 <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+
 
 
 </body>
