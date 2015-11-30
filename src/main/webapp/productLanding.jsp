@@ -155,7 +155,7 @@
 					<!--</p>-->
 				</div>
 
-				<div class="close-button r-close-button">x</div>
+				<div class="close-button r-close-button">x</div>x
 			</div>
 
 
@@ -168,13 +168,9 @@
 					<div class="col1 clearfix">
 					
 					<c:forEach items="${products}" var="product">
-<<<<<<< HEAD
-				<a href = "#">
-						<li class="tile tile-big tile-4"  >
-=======
 				<a href = "product?id=${product.productID}">
 						<li class="tile tile-big tile-1 slideTextUp"  >
->>>>>>> 17477374a1d448659798748f8e7140634819201d
+
 							<figure>
 								<img src="${product.image}"/>
 								<figcaption class="tile-caption caption-left">View this item now</figcaption>
