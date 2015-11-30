@@ -21,14 +21,21 @@
 
 
 <body>
+
+
+
+
 <p id="filter"></p>
 <div class="page-container">
 	<div class="header">
 
 			<%@include  file="Navbar.jsp" %>
 	</div>
+
 		
     <div class="container">
+    
+    
         
 		<div class="row">
 		    <div class="col-md-12">
@@ -42,8 +49,13 @@
 			
 		</div>
 		<!---->
-
 		
+		
+	<!--tiles start from here-->
+	<div class="container">
+		<div class="row">	
+		<div class = "col-md-12">
+		<div class = "parent">
 		<div class="menu_simple">
 			<ul>
 				<li><a href="#"><h3>Beds</h3></a></li>				
@@ -62,6 +74,29 @@
 				<li><a href="#">Three chest</a></li>
 			</ul>
 		</div>
+		</div>
+		<div class = "child">
+					<div class="dashboard clearfix">		
+			<c:forEach items="${products}" var="product">
+			<div class="col-md-4">
+				<a href = "product?id=${product.productID}"> 
+				<div id="livefilter-list" class="tiles"><div class="tile tile-fig tile-4">
+					<figure><img src="${product.image}"><figcaption class="tile-caption caption-left">£<c:out value="${product.price}"></c:out></figcaption>
+					</figure></div>	
+			
+				 </div>
+					</a>
+				 </div>
+			</c:forEach>
+				
+		</div>
+		</div>
+		</div>		  
+		</div>	
+		</div>
+
+		
+		
 		
 		<!-- Code below was the old side-menu -->
 		
@@ -109,25 +144,7 @@
 					</div> -->
 
 
-<!--tiles start from here-->
-	<div class="container">
-		<div class="row">	
-					<div class="dashboard clearfix">		
-			<c:forEach items="${products}" var="product">
-			<div class="col-md-3">
-				<a href = "product?id=${product.productID}"> 
-				<div id="livefilter-list" class="tiles"><div class="tile tile-fig tile-4">
-					<figure><img src="${product.image}"><figcaption class="tile-caption caption-left">£<c:out value="${product.price}"></c:out></figcaption>
-					</figure></div>	
-			
-				 </div>
-					</a>
-				 </div>
-			</c:forEach>
-				
-		</div>
-		</div>		  
-		</div>	
+
 
 
 <script>
