@@ -43,16 +43,29 @@
 		</div>
 		<!---->
 
-		<!--<div class="row">-->
-		    <!--<div class="col-md-12">-->
-			    <!--<div class="cat_header">-->
-				    <!--<h2>Bedroom</h2>-->
-			    <!--</div>-->
+		
+		
+		<div class="menu_simple">
+			<ul>
+				<li><a href="#"><h3>Beds</h3></a></li>				
+				<!--<li class="active"><a href="Bedroom.html">trendy</a></li>-->
+				<li><a href="#">${Categories[0]}</a></li>
+				<li><a href="#">${Categories[1]}</a></li>
+				<li><a href="#">${Categories[2]}</a></li>
+				<li><a href="#">${Categories[3]}</a></li>
+						
 
-			<!--</div>-->
-		<!--</div>-->
-
-
+				<li><a href="#"><h3>Wardrobes</h3></a></li>
+				<li><a href="#">Single</a></li>
+				<li><a href="#">Double</a></li>
+				<li><a href="#"><h3>Drawers</h3></a></li>
+				<li><a href="#">Two chest</a></li>
+				<li><a href="#">Three chest</a></li>
+			</ul>
+		</div>
+		
+		
+		
 
 		<div class="container">
 			<div class="row">
