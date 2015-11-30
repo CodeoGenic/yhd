@@ -17,6 +17,10 @@ public class IndexController {
 	ApplicationContext mongoContext = new AnnotationConfigApplicationContext(DataConfig.class, RepositoryConfig.class);
 	ProductResository productRepository = mongoContext.getBean(ProductResository.class);
 
+	/**
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping("/")
 	public ModelAndView load(ModelAndView model) {
 		
@@ -47,6 +51,55 @@ public class IndexController {
 			"image/assets/KN Upload/OFC1275/OFC1275a.jpg", "image/assets/KN Upload/OFC1275/OFC1275b.jpg",
 			"image/assets/KN Upload/OFC1275/OFC1275c.jpg", "image/assets/KN Upload/OFC1275/OFC1275c.jpg",
 			"image/assets/KN Upload/OFC1275/OFC1275d.jpg"));*/
+		
+		
+/*		productRepository.insert(new Product(5, "Red", 0, "Its A winner", "image/assets/KN Upload/OFC1273/OFC1273b.jpg",
+				"RICKYS bed 1", 3000, 3, 99999, "over nine Thosound", "muwhaha", "mdasda", 0, "king size bed",
+				"image/assets/KN Upload/OFC1275/OFC1275a.jpg", "image/assets/KN Upload/OFC1275/OFC1275b.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275c.jpg", "image/assets/KN Upload/OFC1275/OFC1275c.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275d.jpg"));
+		
+		productRepository.insert(new Product(6, "Red", 0, "Its A winner", "image/assets/KN Upload/OFC1273/OFC1273b.jpg",
+				"REZA AND OLIVER'S bed 1", 3000, 3, 99999, "over nine Thosound", "muwhaha", "mdasda", 0, "king size bed",
+				"image/assets/KN Upload/OFC1275/OFC1275a.jpg", "image/assets/KN Upload/OFC1275/OFC1275b.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275c.jpg", "image/assets/KN Upload/OFC1275/OFC1275c.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275d.jpg"));
+		
+		productRepository.insert(new Product(7, "Red", 0, "Its A winner", "image/assets/KN Upload/OFC1273/OFC1273b.jpg",
+				"HAYDER AND ANWAR'S bed 1", 3000, 3, 99999, "over nine Thosound", "muwhaha", "mdasda", 0, "king size bed",
+				"image/assets/KN Upload/OFC1275/OFC1275a.jpg", "image/assets/KN Upload/OFC1275/OFC1275b.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275c.jpg", "image/assets/KN Upload/OFC1275/OFC1275c.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275d.jpg"));
+		
+		productRepository.insert(new Product(8, "Red", 0, "Its A winner", "image/assets/KN Upload/OFC1273/OFC1273b.jpg",
+				"HAYDER AND ANWAR'S bed 1", 3000, 3, 99999, "over nine Thosound", "muwhaha", "mdasda", 0, "king size bed",
+				"image/assets/KN Upload/OFC1275/OFC1275a.jpg", "image/assets/KN Upload/OFC1275/OFC1275b.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275c.jpg", "image/assets/KN Upload/OFC1275/OFC1275c.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275d.jpg"));
+		
+		productRepository.insert(new Product(9, "Red", 0, "Its A winner", "image/assets/KN Upload/OFC1273/OFC1273b.jpg",
+				"HAYDER AND ANWAR'S bed 1", 3000, 3, 99999, "over nine Thosound", "muwhaha", "mdasda", 0, "king size bed",
+				"image/assets/KN Upload/OFC1275/OFC1275a.jpg", "image/assets/KN Upload/OFC1275/OFC1275b.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275c.jpg", "image/assets/KN Upload/OFC1275/OFC1275c.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275d.jpg"));
+		
+		productRepository.insert(new Product(10, "Red", 0, "Its A winner", "image/assets/KN Upload/OFC1273/OFC1273b.jpg",
+				"my bed 1", 3000, 3, 99999, "over nine Thosound", "muwhaha", "mdasda", 0, "king size bed",
+				"image/assets/KN Upload/OFC1275/OFC1275a.jpg", "image/assets/KN Upload/OFC1275/OFC1275b.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275c.jpg", "image/assets/KN Upload/OFC1275/OFC1275c.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275d.jpg"));
+		
+		productRepository.insert(new Product(11, "Red", 0, "Its A winner", "image/assets/KN Upload/OFC1273/OFC1273b.jpg",
+				"gogogo bed 1", 3000, 3, 99999, "over nine Thosound", "muwhaha", "mdasda", 0, "king size bed",
+				"image/assets/KN Upload/OFC1275/OFC1275a.jpg", "image/assets/KN Upload/OFC1275/OFC1275b.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275c.jpg", "image/assets/KN Upload/OFC1275/OFC1275c.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275d.jpg"));
+		
+		productRepository.insert(new Product(12, "Red", 0, "Its A winner", "image/assets/KN Upload/OFC1273/OFC1273b.jpg",
+				"HAYDER go bed 1", 3000, 3, 99999, "over nine Thosound", "muwhaha", "mdasda", 0, "king size bed",
+				"image/assets/KN Upload/OFC1275/OFC1275a.jpg", "image/assets/KN Upload/OFC1275/OFC1275b.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275c.jpg", "image/assets/KN Upload/OFC1275/OFC1275c.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275d.jpg"));*/
 	
 	
 		model.setViewName("index.jsp");
