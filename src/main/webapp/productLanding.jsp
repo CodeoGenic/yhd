@@ -44,7 +44,6 @@
 		<!---->
 
 		
-		
 		<div class="menu_simple">
 			<ul>
 				<li><a href="#"><h3>Beds</h3></a></li>				
@@ -63,7 +62,6 @@
 				<li><a href="#">Three chest</a></li>
 			</ul>
 		</div>
-		
 		
 		<!-- Code below was the old side-menu -->
 		
@@ -94,13 +92,9 @@
 		
 		
 		
-        <div class="row ">
-			<div class="col-md-8">
-				<div id="metro-array" style="display: block;">
+        
+				<!-- <div id="metro-array" style="display: block;">
 
-
-					<!-- Simple grid for the demo! None of these styles are required, thats just how I've styled my tiles -->
-					<!-- The only important thing is class="metro-tile" -->
 
 					<div style="width: 700px; height: 400px; float: none ">
 
@@ -112,8 +106,29 @@
 						</a>
 
 					</div>
-					</div>
-</div>
+					</div> -->
+
+
+<!--tiles start from here-->
+	<div class="container">
+		<div class="row">	
+					<div class="dashboard clearfix">		
+			<c:forEach items="${products}" var="product">
+			<div class="col-md-3">
+				<a href = "product?id=${product.productID}"> 
+				<div id="livefilter-list" class="tiles"><div class="tile tile-fig tile-4">
+					<figure><img src="${product.image}"><figcaption class="tile-caption caption-left">£<c:out value="${product.price}"></c:out></figcaption>
+					</figure></div>	
+			
+				 </div>
+					</a>
+				 </div>
+			</c:forEach>
+				
+		</div>
+		</div>		  
+		</div>	
+
 
 <script>
 	$(function() {
@@ -124,40 +139,9 @@
 </script>
 
 
-<!--tiles start from here-->
-
-		<div class="row">	
-					<div class="dashboard clearfix">		
-			<c:forEach items="${products}" var="product">
-			<div class="col-md-3">
-				<a href = "product?id=${product.productID}"> 
-				<div  id="livefilter-list" class="tiles"><div class="tile tile-fig tile-4">
-					<figure><img src="${product.image}"><figcaption class="tile-caption caption-left">£<c:out value="${product.price}"></c:out></figcaption>
-					</figure></div>	
-			
-				 </div>
-					</a>
-				 </div>
-			</c:forEach>
-				
-		</div>
-		</div>
-		
-		
-	
-		  
-		</div>	
-
-
 		
 				
 				
-
-			
-
-
-
-
 	<div class="footer black">
 		<div class="container">
 			<!-- div class="arrow"><b class="caret"></b></div -->
