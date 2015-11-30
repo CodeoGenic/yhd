@@ -169,16 +169,17 @@
 					
 					<c:forEach items="${products}" var="product">
 				<a href = "#">
-						<li class="tile tile-big tile-1 slideTextUp"  >
+						<li class="tile tile-big tile-4"  >
 							<figure>
 								<img src="${product.image}"/>
-								<div><p>Shop now</p></div>
+								<figcaption class="tile-caption caption-left">View this item now</figcaption>
 							</figure>
 						</li>
 						
 						 </a>
 				</c:forEach>
-
+				
+				
 
 					</div>
 				</ul>
