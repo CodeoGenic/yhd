@@ -56,11 +56,13 @@
 		<div class="row">	
 		<div class = "col-md-12">
 		<div class = "parent">
+		<form action="cat" method="post">
 		<div class="menu_simple">
 			<ul>
 				<li><a href="#"><h3>Beds</h3></a></li>				
 				<!--<li class="active"><a href="Bedroom.html">trendy</a></li>-->
-				<li><a href="#">${Categories[0]}</a></li>
+				<li><input  type="submit" class="btn-primary"  name="bed" value="${Categories[0]}">
+						<input class="hidden"  name="type" value="0"></li>
 				<li><a href="#">${Categories[1]}</a></li>
 				<li><a href="#">${Categories[2]}</a></li>
 				<li><a href="#">${Categories[3]}</a></li>
@@ -74,6 +76,7 @@
 				<li><a href="#">Three chest</a></li>
 			</ul>
 		</div>
+		</form>
 		</div>
 		<div class = "child">
 					<div class="dashboard clearfix">		
@@ -148,11 +151,9 @@
 
 
 <script>
-	$(function() {
-		$('#livefilter-list').liveFilter('#livefilter-input', 'div', {
-			filterChildSelector : 'a'
-		});
-	});
+function refresh(){
+$('#child').load(document.URL +  ' #child');
+}
 </script>
 
 

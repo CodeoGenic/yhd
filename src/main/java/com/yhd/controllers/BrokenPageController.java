@@ -1,4 +1,4 @@
-package com.yhd.controllers;
+/*package com.yhd.controllers;
 
 import org.springframework.boot.autoconfigure.web.ErrorController;
 import org.springframework.stereotype.Controller;
@@ -19,4 +19,4 @@ public class BrokenPageController implements ErrorController{
     public String getErrorPath() {
         return PATH;
     }
-}
+}*/
