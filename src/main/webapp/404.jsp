@@ -45,7 +45,9 @@
 				<h1 class="e404"><strong>[404]</strong></h1>
 			</div>
 			<div class="col-md-6">
+			<marquee>
 				<h1 class="page">Page can not be found <span class = "fa fa-frown-o"></span></h1>
+				</marquee>
 				<h6 class="e404">We are sorry, but the page you are looking for might have been removed, had its name changed or is temporarily unavailable.</h6>
 				<p>
 				<a class="btn btn-primary" href="index.html">
