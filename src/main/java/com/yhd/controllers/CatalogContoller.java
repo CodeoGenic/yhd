@@ -46,7 +46,7 @@ public class CatalogContoller {
 		 int type = Integer.parseInt(request.getParameter("type"));
 		System.out.println(type);
 		for(int i =0; i<products.size(); i++){
-			if(products.get(i).getProductType()==type){
+			if(products.get(i).getSubType().contains(name)){
 					related.add(products.get(i));
 			}
 		}
@@ -60,7 +60,7 @@ public class CatalogContoller {
 		model.addObject("Title", "Bedroom");
 		model.addObject("Beds", "Beds");
 		model.addObject("Categories", cat );
-		model.addObject("products", products);
+		model.addObject("products", related);
 		model.setViewName("productLanding.jsp");
 		return model;
 		}	
