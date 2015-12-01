@@ -42,7 +42,8 @@
   height:300px;
   background-color:#00000000;
   position:absolute;
-  overflow-y:auto;
+  overflow-y:scroll;
+  overflow-x:hidden;
   top:0px;
   right:0px;
 }
