@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/camera.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/windows8tile.css">
-	<script src="js/modernizr-1.5.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Julius+Sans+One|Exo+2:400,100&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>	<script src="js/modernizr-1.5.min.js"></script>
 	<script src="js/jquery.liveFilter.js"></script>
     <!--script type="text/javascript" src="https://getfirebug.com/firebug-lite-debug.js"></script-->	
 	<title><c:out value="${Title}"></c:out></title>
@@ -61,11 +61,19 @@
 			<ul>
 				<li><a href="#"><h3>Beds</h3></a></li>				
 				<!--<li class="active"><a href="Bedroom.html">trendy</a></li>-->
-				<li><input  type="submit" class="btn-primary"  name="bed" value="${Categories[0]}">
-						<input class="hidden"  name="type" value="0"></li>
-				<li><a href="#">${Categories[1]}</a></li>
-				<li><a href="#">${Categories[2]}</a></li>
-				<li><a href="#">${Categories[3]}</a></li>
+				<li><input type="submit" class="btn-sidemenu"  name="bed" value="${Categories[0]}">
+					<input class="hidden" name="type" value="0">
+				</li>
+				
+				<li><input type="submit" class="btn-sidemenu"  name="bed" value="${Categories[1]}">
+					<input class="hidden" name="type" value="0"></li>
+					
+					<li><input type="submit" class="btn-sidemenu"  name="bed" value="${Categories[2]}">
+					<input class="hidden" name="type" value="0"></li>
+					
+					<li><input type="submit" class="btn-sidemenu"  name="bed" value="${Categories[3]}">
+					<input class="hidden" name="type" value="0"></li>
+				
 						
 
 				<li><a href="#"><h3>Wardrobes</h3></a></li>
@@ -78,6 +86,7 @@
 		</div>
 		</form>
 		</div>
+		
 		<div class = "child">
 					<div class="dashboard clearfix">		
 			<c:forEach items="${products}" var="product">

@@ -29,6 +29,37 @@
 /*	Default styles
 /*-----------------------------------------------------------------------------------*/
 
+/* this code is for the custom menu button */
+
+
+.submit{
+	background-color: #000000;
+    text-align: left;
+}
+
+.btn-sidemenu{
+	background-color:#464646;
+	text-align:left;
+	font-family: 'Exo 2', sans-serif;
+	text-transform:uppercase;
+    color:white;	
+/*  padding:12px 25px 10px;
+ */ width:185px;
+    height:40px;
+	transition:all 0.4s ease 0s;
+	border-color: #00000000;
+    border-style:none;
+    outline-style: none;    
+}
+
+
+.btn-sidemenu:hover
+{
+   background-color:#000000;
+}
+
+
+
 /*This is to position content relative to each other  */
 .parent {
   width:200px;
