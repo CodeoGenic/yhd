@@ -54,7 +54,7 @@ public class CatalogContoller {
 		if(type==0){
 		String [] cat = new String[4];
 		cat[0]="Single";
-		cat[1]="Double";
+		cat[1]="double";
 		cat[2]="King";
 		cat[3] = "Queen";
 		model.addObject("Title", "Bedroom");
@@ -81,7 +81,7 @@ public class CatalogContoller {
 			}
 		}
 		System.out.println(request.getParameterValues("id"));
-		if(type==0){
+		
 		String [] cat = new String[4];
 		cat[0]="Single";
 		cat[1]="Double";
@@ -90,12 +90,12 @@ public class CatalogContoller {
 		model.addObject("Title", "Bedroom");
 		model.addObject("Beds", "Beds");
 		model.addObject("Categories", cat );
-		model.addObject("products", products);
+		model.addObject("products", related);
 		model.setViewName("productLanding.jsp");
 		return model;
-		}	
-		return model;
+			
 	}
+	
 	
 	/**
 	 * this gets the id from the hpyerlink

@@ -16,8 +16,8 @@ public class RepositoryConfig {
 	@Autowired
 	MongoOperations mongoOperation;
 	
-	@Autowired
-	SQLTemplate sqlTemplate;
+/*	@Autowired
+	SQLTemplate sqlTemplate;*/
 	
 	
 	
