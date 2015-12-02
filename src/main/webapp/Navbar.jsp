@@ -86,19 +86,16 @@
 							</thead>
 							<tbody>
 								<tr>
+								<% for(int i = 0; i< 5; i++){ %>
 									<td class="image"><img alt="IMAGE" class="img-responsive" src="products/bedroom4.jpg"></td>
 									<td class="name"><a href="project.html">Black Dress</a></td>
 									<td class="quantity">x&nbsp;3</td>
 									<td class="total">$130.00</td>
-									<td class="remove"><img src="image/remove-small.png" alt="Remove" title="Remove"></td>											
+									<td class="remove"><input type="image" id="myimage" src="image/remove-small.png" title="Remove"/></td>
+									<!-- 	<td class="remove"><img src="image/remove-small.png" alt="Remove" title="Remove"></td> -->
+																			
 								</tr>
-								<tr>
-									<td class="image"><img alt="IMAGE" class="img-responsive" src="products/dress11.jpg"></td>
-									<td class="name"><a href="project.html">Blue Dress</a></td>
-									<td class="quantity">x&nbsp;3</td>
-									<td class="total">$230.00</td>
-									<td class="remove"><img src="image/remove-small.png" alt="Remove" title="Remove"></td>											
-								</tr>
+								<%} %>								
 							</tbody>									
 						</table>
 						<div class="cart-total">

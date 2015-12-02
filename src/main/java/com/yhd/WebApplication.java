@@ -8,9 +8,9 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan
 @EnableAutoConfiguration
 @SpringBootApplication
-public class WebpappApplication {
+public class WebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WebpappApplication.class, args);
+        SpringApplication.run(WebApplication.class, args);
     }
 }
