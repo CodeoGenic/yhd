@@ -1,7 +1,11 @@
 package com.yhd.entities;
 
+
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import com.yhd.util.Dimension;
 
 @Document(collection = "Product")
 public class Product {
@@ -10,7 +14,7 @@ public class Product {
 	private int productID;
 	
 	private String color;
-	private int dimensions;
+	private Dimension dimensions;
 	private String description;
 	private String image;
 	private String productName;
@@ -28,7 +32,7 @@ public class Product {
 
 	}
 
-	public <E> Product(int productID, String color, int size, String description, String image, String productName,
+	public <E> Product(int productID, String color, Dimension size, String description, String image, String productName,
 			int price, int sockLevel, int rating, String review, String customerName, String customerEmail,
 			int productInt ,String subType, E... images ) {
 		this.productID = productID;
@@ -116,11 +120,11 @@ public class Product {
 		this.color = color;
 	}
 
-	public int getDimensions() {
+	public Dimension getDimensions() {
 		return dimensions;
 	}
 
-	public void setDimensions(int dimensions) {
+	public void setDimensions(Dimension dimensions) {
 		this.dimensions = dimensions;
 	}
 

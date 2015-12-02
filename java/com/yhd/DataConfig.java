@@ -1,5 +1,7 @@
 package com.yhd;
 
+import javax.sql.DataSource;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.MongoDbFactory;
@@ -9,6 +11,7 @@ import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 import com.mongodb.MongoClient;
+import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 @Configuration
 @EnableMongoRepositories
 public class DataConfig {
@@ -28,4 +31,14 @@ public class DataConfig {
 	public MongoOperations mongoOperation() throws Exception{
 		return (MongoOperations) mongoTemplate();
 	}
+	
+	@Bean
+    public DataSource dataSource(){
+        MysqlDataSource dataSource = new MysqlDataSource();
+        dataSource.setDatabaseName("yhd");
+        dataSource.setUser("root");
+        dataSource.setPassword("root");
+        dataSource.setServerName("25.124.3.132");
+        return dataSource;
+    }
 }

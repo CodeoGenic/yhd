@@ -10,6 +10,7 @@ import com.yhd.DataConfig;
 import com.yhd.RepositoryConfig;
 import com.yhd.entities.Product;
 import com.yhd.repos.ProductResository;
+import com.yhd.util.Dimension;
 
 @Controller
 public class IndexController {
@@ -100,6 +101,13 @@ public class IndexController {
 				"image/assets/KN Upload/OFC1275/OFC1275a.jpg", "image/assets/KN Upload/OFC1275/OFC1275b.jpg",
 				"image/assets/KN Upload/OFC1275/OFC1275c.jpg", "image/assets/KN Upload/OFC1275/OFC1275c.jpg",
 				"image/assets/KN Upload/OFC1275/OFC1275d.jpg"));*/
+		
+		
+		productRepository.insert(new Product(0, "Red",new Dimension(20,40,40), "Its A winner", "image/assets/KN Upload/OFC1273/OFC1273b.jpg",
+				"HAYDER go bed 1", 3000, 3, 99999, "over nine Thosound", "muwhaha", "mdasda", 0, "king size bed",
+				"image/assets/KN Upload/OFC1275/OFC1275a.jpg", "image/assets/KN Upload/OFC1275/OFC1275b.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275c.jpg", "image/assets/KN Upload/OFC1275/OFC1275c.jpg",
+				"image/assets/KN Upload/OFC1275/OFC1275d.jpg"));
 	
 	
 		model.setViewName("index.jsp");
