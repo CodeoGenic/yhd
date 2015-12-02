@@ -59,7 +59,7 @@
 		<form action="cat" method="post">
 		<div class="menu_simple">
 			<ul>
-				<li><a href="#"><h3>Beds</h3></a></li>				
+				<li><a href="type?type=0"><h3>Beds</h3></a></li>				
 				<!--<li class="active"><a href="Bedroom.html">trendy</a></li>-->
 				<li><input type="submit" class="btn-sidemenu"  name="bed" value="${Categories[0]}">
 					<input class="hidden" name="type" value="0">
