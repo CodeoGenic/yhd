@@ -34,6 +34,7 @@
 
 .submit{
 	background-color: #000000;
+	
     text-align: left;
 }
 
@@ -41,6 +42,7 @@
 	background-color:#464646;
 	text-align:left;
 	font-family: 'Exo 2', sans-serif;
+	font-weight:300;
 	text-transform:uppercase;
     color:white;	
 /*  padding:12px 25px 10px;
