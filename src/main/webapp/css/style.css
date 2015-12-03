@@ -31,7 +31,6 @@
 
 /* this code is for the custom menu button */
 
-
 .submit{
 	background-color: #000000;
 	
@@ -40,8 +39,9 @@
 
 .btn-sidemenu{
 	background-color:#464646;
-	text-align:left;
-	font-family: 'Exo 2', sans-serif;
+	font-size:15px;
+	text-align: left;
+    font-family: 'Exo 2', sans-serif;
 	font-weight:300;
 	text-transform:uppercase;
     color:white;	

@@ -76,10 +76,10 @@
 				
 						
 
-				<li><a href="#"><h3>Wardrobes</h3></a></li>
+				<li><a href="type?type=1"><h3>Wardrobes</h3></a></li>
 				<li><a href="#">Single</a></li>
 				<li><a href="#">Double</a></li>
-				<li><a href="#"><h3>Drawers</h3></a></li>
+				<li><a href="type?type=2"><h3>Drawers</h3></a></li>
 				<li><a href="#">Two chest</a></li>
 				<li><a href="#">Three chest</a></li>
 			</ul>

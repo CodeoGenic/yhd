@@ -16,11 +16,14 @@ public class RepositoryConfig {
 
 	@Autowired
 	MongoOperations mongoOperation;
+
 /*	
 	@Autowired
 	//SQLTemplate sqlTemplate;
+
 	
-	*/
+
+
 	
 	@Primary
 	@Bean
