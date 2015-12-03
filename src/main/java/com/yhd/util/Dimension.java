@@ -10,6 +10,7 @@ public class Dimension {
 		this.height=height;
 		this.length=length;
 	}
+	//asas
 
 	public double getWidth() {
 		return width;
