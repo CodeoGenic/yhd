@@ -10,7 +10,7 @@ import com.yhd.DataConfig;
 import com.yhd.RepositoryConfig;
 import com.yhd.entities.Product;
 import com.yhd.repos.ProductResository;
-import com.yhd.util.Dimension;
+/*import com.yhd.util.Dimension;*/
 
 @Controller
 public class IndexController {
