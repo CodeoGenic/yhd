@@ -16,7 +16,6 @@
 	<title>Office</title>
 </head>
 <body>
-<p id="filter">office</p>
 <div class="page-container">
 	<div class="header">
 		<%@include  file="Navbar.jsp" %>

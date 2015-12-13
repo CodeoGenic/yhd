@@ -22,7 +22,7 @@
 <title>${title}</title>
 </head>
 <body>
-	<div class="page-container" style="background-color: #222">
+	<div class="page-container" style="background-color: #00000000">
 		<%@include  file="Navbar.jsp" %>
 
 

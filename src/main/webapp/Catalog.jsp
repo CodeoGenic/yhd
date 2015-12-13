@@ -17,7 +17,6 @@
 	<title>Kitchen</title>
 </head>
 <body>
-<p id="filter">kitchen</p>
 <div class="page-container">
 	<div class="header">
 		<%@include  file="Navbar.jsp" %>

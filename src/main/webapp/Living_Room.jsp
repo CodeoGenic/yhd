@@ -16,7 +16,7 @@
 	<title>Living Room</title>
 </head>
 <body>
-<p id="filter">living_room</p>
+
 <div class="page-container">
 	<div class="header">
 		<%@include  file="Navbar.jsp" %>

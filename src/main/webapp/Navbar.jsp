@@ -32,7 +32,7 @@
 			<!--</div>-->
 			
 
-				<p id="filter">...</p>
+				
 			<script>
 
 				function myfunction(x) {
@@ -117,11 +117,25 @@
 			      </li>
 			     </ul>
 					 
-                    <form action="/" class="navbar-form navbar-search navbar-right" role="search">
+                    <form action="/" class="navbar-form navbar-search" role="search">
 		      <div class="input-group"> 
                         <input type="text" name="search" placeholder="Search" class="search-query col-md-2"><button type="submit" class="btn btn-default icon-search"></button> 
                       </div>
+                      
+                       
                     </form>
-					 
-                  </div><!-- /.navbar-collapse -->
+                    <form action="/" class="navbar-form navbar-right">
+                     <div class ="input-group">
+					 <input class="account" type="text" name="Username" placeholder="Username">
+					  <input class="account" type ="password" name="Password" placeholder="Password">
+					  <input class="login" type ="submit" value="Login">
+					 </div>
+                    </form>
+					
+                  </div>
+              
+                 
+					
+					
+					 <!-- /.navbar-collapse -->
 			</nav>		
