@@ -60,7 +60,13 @@
    background-color:#000000;
 }
 
+/*form register page */
 
+.formcentre{
+	width: 100px;
+	height: 40px;
+	display:inline-block;
+}
 
 /*This is to position content relative to each other  */
 .parent {
