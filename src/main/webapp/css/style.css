@@ -63,9 +63,19 @@
 /*form register page */
 
 .formcentre{
-	width: 100px;
-	height: 40px;
-	display:inline-block;
+	
+  width:700px;  
+  background-color:#00000000;
+  position:absolute;   
+  top:-5px;
+  right:0px;
+ 
+}
+
+.formcentreParent{
+  width:200px;  
+  background-color:#00000000;
+  position:relative
 }
 
 /*This is to position content relative to each other  */
