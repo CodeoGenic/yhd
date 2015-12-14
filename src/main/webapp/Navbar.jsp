@@ -124,7 +124,7 @@
                       
                        
                     </form>
-                    <form action="user_login" class="navbar-form navbar-right">
+                    <form action="user_login" class="navbar-form navbar-right" method="POST">
                      <div class ="input-group">
 					 <input class="account" type="text" name="Username" placeholder="Username">
 					  <input class="account" type ="password" name="Password" placeholder="Password">
