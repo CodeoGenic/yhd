@@ -1,4 +1,4 @@
-/*package com.yhd.controllers;
+package com.yhd.controllers;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+@Controller
 public class loginController {
 
 	@RequestMapping(value="userlogin" ,method = RequestMethod.POST)
@@ -24,4 +25,3 @@ public class loginController {
 		}
 	}
 }
-*/
