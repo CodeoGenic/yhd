@@ -1,4 +1,4 @@
-package com.yhd.controllers;
+/*package com.yhd.controllers;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,11 +9,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 public class loginController {
 
-	@RequestMapping(value="user_login" ,method = RequestMethod.POST)
+	@RequestMapping(value="userlogin" ,method = RequestMethod.POST)
 	public ModelAndView login(ModelAndView model, HttpServletRequest request){
 		String username = (String) request.getParameter("username");
 		String password = (String) request.getParameter("password");
 		printAll(username,password);
+		model.setViewName("index.jsp");
 		return model;
 	}
 	
@@ -23,3 +24,4 @@ public class loginController {
 		}
 	}
 }
+*/

@@ -34,6 +34,15 @@ public class RegController {
 		
 	}
 	
+	@RequestMapping(value="userlogin" ,method = RequestMethod.POST)
+	public ModelAndView login(ModelAndView model, HttpServletRequest request){
+		String username = (String) request.getParameter("username");
+		String password = (String) request.getParameter("password");
+		printAll(username,password);
+		model.setViewName("index.jsp");
+		return model;
+	}
+	
 	public void printAll(String ...args){
 		for(int i=0; i<args.length; i++){
 			System.out.println(args[i]);
