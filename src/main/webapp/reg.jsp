@@ -17,7 +17,7 @@
 			<div class="container">
 				<form class="form-horizontal" action="reg1" role = "form" method="POST">
 					<div>	
-						<div class="col-sm-10">
+						<div class="col-md-10">
 							<div class="formcentre">
 								<div class="form-group">
 									Username:<input class="form-control" type="text" name="username" placeholder="Username"/>
