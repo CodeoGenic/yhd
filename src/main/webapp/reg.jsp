@@ -40,14 +40,24 @@
 								 City <input class="form-control"  type="text" name="city" placeholder="City"/>
 							     Postal Code : <input class="form-control"  type="text" name="postal code" placeholder="Postal Code"/>
 								 <input class="btn btn-default" type="submit" value="Regisiter"/>
+								 
 							</div>
+							
 							</div>
 						</div>
 				</div>
+				
 				</form>
+				
+			
+			
 			</div>
+			
+			<div class="foot">
 			<%@include file="footer.jsp"%>
+			</div>
 		</div>	
 	</body>
+	
 </html>
 
