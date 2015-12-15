@@ -10,10 +10,10 @@
 			<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
 			<span class="icon-bar"></span> <span class="icon-bar"></span>
 		</button>
-		<a href="index.html" class="navbar-brand"> </a>
+		<a href="index" class="navbar-brand"> </a>
 	</div>
 
-	<img src="img/YHD.png" alt="YHD">
+	<a href="index"><img src="img/YHD.png" alt="YHD"></a>
 
 
 	<!--<div class="row text-right">-->
@@ -41,7 +41,7 @@
 
 	<div class="navbar-collapse collapse navbar-right">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="/">Home</a></li>
+			<li class="active"><a href="index">Home</a></li>
 			<li class="dropdown"><a data-toggle="dropdown"
 				class="dropdown-toggle" href="#">Products <b class="caret"></b></a>
 
@@ -51,8 +51,8 @@
 					<li id="kitchen"><a class="kitchen" href="type?type=0"
 						class="ajax_right">Kitchen</a></li>
 					<li id="living_room"><a class="living_loom"
-						href="Living_Room.html" class="ajax_right">Living Room</a></li>
-					<li id="office"><a class="office" href="Office.html"
+						href="type?type=0" class="ajax_right">Living Room</a></li>
+					<li id="office"><a class="office" href="type?type=0"
 						class="ajax_right">Office</a></li>
 
 				</ul></li>
@@ -70,7 +70,7 @@
 		<li class="dropdown"><a data-toggle="dropdown"
 			class="dropdown-toggle" href="#">About Us<b class="caret"></b></a>
 			<ul class="dropdown-menu multi-2-columns">
-				<li id="about"><a href="about" class="ajax_right">About</a></li>
+				<li><a href="about" class="ajax_right">About</a></li>
 				<li id="contact"><a href="contact" class="ajax_right">Contact</a></li>
 				<li><a href="site-map.jsp" class="ajax_right">Site-map</a></li>				
 			</ul></li>

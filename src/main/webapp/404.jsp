@@ -50,7 +50,7 @@
 				</marquee>
 				<h6 class="e404">We are sorry, but the page you are looking for might have been removed, had its name changed or is temporarily unavailable.</h6>
 				<p>
-				<a class="btn btn-primary" href="index.html">
+				<a class="btn btn-primary" href="index">
 					Get me back to homepage!
 				</a>
 				</p>
@@ -78,7 +78,7 @@
 					<div>
 			        <h3>Customer Service</h3>
 				        <ul>
-					        <li><a href="contact.html" class="ajax_right">Contact Us</a></li>
+					        <li><a href="contact" class="ajax_right">Contact Us</a></li>
 						    <li><a href="">Returns</a></li>
 						    <li><a href="">Site Map</a></li>
 							<li><a href="">Shipping</a></li>
