@@ -33,15 +33,16 @@
 #reg-container {
   width: 800px;
   margin: 25px auto;
-  position:relative;
+  
 }
 
 .signup {
   width: 400px;
-  padding: 30px 20px;
+  padding: 40px 30px;
   background-color: white;
   text-align: center;
-  border-radius: 5px 0 0 5px;
+  border-radius: 20px 20px 20px 20px;
+  margin: 0px auto;
 }
 
 .signup input[type=text],
@@ -58,9 +59,10 @@
   color: rgba(0,0,0,.4);
 }
 
-.signup input[type='text']:focus {
+.signup input[type='text']:focus,
+.signup input[type='password']:focus {
   outline: none;
-  border-color: #000000;
+  border-color: #ff80c0;
 }
 
 .signup input[type=submit] {
@@ -78,8 +80,7 @@
 /* this code is for the custom menu button */
 
 .submit{
-	background-color: #000000;
-	
+	background-color: #000000;	
     text-align: left;
 }
 
