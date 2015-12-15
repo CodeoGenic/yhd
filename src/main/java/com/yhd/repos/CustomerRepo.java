@@ -28,7 +28,7 @@ public class CustomerRepo implements CustomerRepoimpl {
 			String address2 = entity.getAddress2();
 			String city = entity.getCity();
 			String postCode = entity.getPostCode();
-			sqltemplate.insert("insert into Customer Values(" + 3 + "," + "'"+username+"'" + "," + "'"+password+"'" + "," + "'"+Title+"'" + ","
+			sqltemplate.insert("insert into Customer Values(" + 4 + "," + "'"+username+"'" + "," + "'"+password+"'" + "," + "'"+Title+"'" + ","
 					+ "'"+firstName+"'" + "," + "'"+surname+"'" + "," + "'"+city+"'" + "," + 3 + "," + "'"+postCode+"'"+ ");");
 			
 

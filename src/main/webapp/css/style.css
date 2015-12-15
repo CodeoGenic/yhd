@@ -29,6 +29,14 @@
 /*	Default styles
 /*-----------------------------------------------------------------------------------*/
 
+/* #signupform {
+  width: 850px;
+  margin: 25px auto;
+  background-color: #ff80ff;
+  
+} */
+
+
 /* this code is for the custom menu button */
 
 .submit{
@@ -65,6 +73,7 @@
 .foot{
 	position:absolute; 
 	top:790px;
+	
 	/* left:0px; */
 }
 .formcentre{

@@ -14,15 +14,15 @@
 	<body>
 	<div class="page-container" style="background-color: #00000000">
 		<%@include  file="Navbar.jsp" %>
-			<div class="container">
+			
+			<div id="container">
 				<form class="form-horizontal" action="reg1" role = "form" method="POST">
 					<div>	
-						<div class="col-md-10">
-							<div class="formcentre">
+						<div class="col-md-12">
 								<!-- <div class="form-group"> -->
-									Username:<input class="form-control" type="text" name="username" placeholder="Username"/>
-									Password:<input class="form-control"  type="password" name="password" placeholder="Password"/>
-									Comfrim password:<input class="form-control"  type="password" name="password1" placeholder="Confirm Password"/>
+									<strong>Username</strong><input class="form-control" type="text" name="username" placeholder="Username"/>
+									<strong>Password</strong><input class="form-control"  type="password" name="password" placeholder="Password"/>
+									<strong>Confirm password</strong><input class="form-control"  type="password" name="password1" placeholder="Confirm Password"/>
 									E-Mail: <input class="form-control"  type="text", name="email" placeholder="E-mail"/>
 								<!-- </div> -->
 								
@@ -41,28 +41,21 @@
 								 Address line 2: <input class="form-control"  type="text" name="address2" placeholder="Address line 2"/>
 								 City <input class="form-control"  type="text" name="city" placeholder="City"/>
 							     Postal Code : <input class="form-control"  type="text" name="postal code" placeholder="Postal Code"/>
-								 <input  onClick=valid() class="btn btn_default" type="submit" value="Regisiter"/>								 
+								 <input class="btn btn_default" type="submit" value="Regisiter"/>	
+								 <div class="btn btn-default" type="button">cancel</div>							 
 							<!-- </div> -->
 							
 							</div>
 						</div>
-				</div>
-				
-				</form>
-				<script>
-						function valid(){
-							 
-						}
-						
-				</script>
+				</div>		
+				</div>		
+				</form>		
+				</div>		
 			
 			
-			</div>
-			
-			<div class="foot">
+			</div>			
 			<%@include file="footer.jsp"%>
-			</div>
-		</div>	
+			</div>	
 	</body>
 	
 </html>
