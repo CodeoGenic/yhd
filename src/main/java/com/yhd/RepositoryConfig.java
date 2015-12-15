@@ -6,10 +6,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.mongodb.core.MongoOperations;
 
+import com.yhd.entities.Customer;
+import com.yhd.repoimpl.CustomerRepoimpl;
 /*import com.yhd.repoimpl.BasketRepositoryimpl;*/
 import com.yhd.repoimpl.ProductRepo;
+import com.yhd.repos.CustomerRepo;
 import com.yhd.repos.ProductResository;
 /*import com.yhd.util.SQLTemplate;*/
+import com.yhd.util.SQLTemplate;
 
 @Configuration
 public class RepositoryConfig {
@@ -17,9 +21,9 @@ public class RepositoryConfig {
 	@Autowired
 	MongoOperations mongoOperation;
 
-/*	
+
 	@Autowired
-	//SQLTemplate sqlTemplate;
+	SQLTemplate sqlTemplate;
 
 	
 
@@ -32,6 +36,17 @@ public class RepositoryConfig {
 		productRepository.setMongoOperation(mongoOperation);
 		return productRepository;
 	}
+	
+	
+	@Primary
+	@Bean
+	public CustomerRepo customerOrderRepo(){
+		CustomerRepo  customer = new CustomerRepo ();
+		customer.setSqltemplate(sqlTemplate);
+		return customer;
+	}
+	
+
 	
 	
 /*	@Primary

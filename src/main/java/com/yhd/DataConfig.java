@@ -12,6 +12,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 import com.mongodb.MongoClient;
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+import com.yhd.util.SQLTemplate;
 @Configuration
 @EnableMongoRepositories
 public class DataConfig {
@@ -38,7 +39,12 @@ public class DataConfig {
         dataSource.setDatabaseName("yhd");
         dataSource.setUser("root");
         dataSource.setPassword("root");
-        dataSource.setServerName("25.124.3.132");
+        dataSource.setServerName("25.98.73.196");
         return dataSource;
     }
+	
+	@Bean
+	public SQLTemplate sqlTemplate(){
+		return new SQLTemplate(dataSource());
+	}
 }

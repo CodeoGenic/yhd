@@ -41,7 +41,7 @@
 								 Address line 2: <input class="form-control"  type="text" name="address2" placeholder="Address line 2"/>
 								 City <input class="form-control"  type="text" name="city" placeholder="City"/>
 							     Postal Code : <input class="form-control"  type="text" name="postal code" placeholder="Postal Code"/>
-								 <input class="btn btn_default" type="submit" value="Regisiter"/>								 
+								 <input  onClick=valid() class="btn btn_default" type="submit" value="Regisiter"/>								 
 							<!-- </div> -->
 							
 							</div>
@@ -49,7 +49,12 @@
 				</div>
 				
 				</form>
-				
+				<script>
+						function valid(){
+							 
+						}
+						
+				</script>
 			
 			
 			</div>

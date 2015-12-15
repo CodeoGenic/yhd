@@ -13,6 +13,13 @@ public class SQLTemplate {
 		this.dataSource=DataSource;
 	}
 	
+	
+	public void insert ( String sql) throws SQLException{
+		Statement statement = dataSource.getConnection().createStatement();
+		statement.execute(sql);
+	}
+	
+
 	/**
 	 * Gets the ResultsSet for executing a Query
 	 * 
