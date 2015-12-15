@@ -29,13 +29,51 @@
 /*	Default styles
 /*-----------------------------------------------------------------------------------*/
 
-/* #signupform {
-  width: 850px;
+/* the code below is for the sign up page */
+#reg-container {
+  width: 800px;
   margin: 25px auto;
-  background-color: #ff80ff;
-  
-} */
+  position:relative;
+}
 
+.signup {
+  width: 400px;
+  padding: 30px 20px;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+}
+
+.signup input[type=text],
+.signup input[type=password] {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  height: 45px;
+  line-height: 45px;  
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: rgba(0,0,0,.4);
+}
+
+.signup input[type='text']:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.signup input[type=submit] {
+  margin-top: 25px;
+  width: 80%;
+  border: 0;
+  background-color: #53CACE;
+  border-radius: 5px;
+  height: 50px;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+}
 
 /* this code is for the custom menu button */
 

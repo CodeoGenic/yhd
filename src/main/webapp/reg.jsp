@@ -14,17 +14,53 @@
 	<body>
 	<div class="page-container" style="background-color: #00000000">
 		<%@include  file="Navbar.jsp" %>
-			
+		
+		
+<div id='reg-container'>
+  <div class='signup'>
+     <form class="form-horizontal" action="reg1" role = "form" method="POST">
+     
+       <input type="text" name="username" placeholder="Username"/>
+	   <input type="password" name="password" placeholder="Password"/>
+	   <input type="password" name="password1" placeholder="Confirm Password"/>
+				
+       
+       <div class="form-inline">
+			<select name="Title">
+					<option value="MR">MR</option>
+					<option value="Miss">MISS</option>
+					<option value="Mrs">MRS</option>
+			</select> 
+					<input type="text" name="First name" placeholder="Firstname"/>
+					<input  type="text" name="Surname" placeholder="Surname"/>	
+					
+					
+					<input type="text" name="address1" placeholder="Address Line 1"/>
+					<input type="text" name="address2" placeholder="Address line 2"/>
+					<input type="text" name="city" placeholder="City"/>
+					<input type="text" name="postal code" placeholder="Postal Code"/>
+								 					
+    	</div> 
+       
+         <input class="btn btn_default" type="submit" value="Regisiter"/>
+     </form>
+  </div> 
+</div>
+		
+		
+		
+		
+			<!-- 
 			<div id="container">
 				<form class="form-horizontal" action="reg1" role = "form" method="POST">
 					<div>	
 						<div class="form-inline">
-								<strong>Username</strong><input class="form-control" type="text" name="username" placeholder="Username"/>
-								<strong>Password</strong><input class="form-control"  type="password" name="password" placeholder="Password"/>
-								<strong>Confirm password</strong><input class="form-control"  type="password" name="password1" placeholder="Confirm Password"/>
+								<p><strong>Username</strong></p><input class="form-control" type="text" name="username" placeholder="Username"/>
+								<p><strong>Password</strong></p><input class="form-control"  type="password" name="password" placeholder="Password"/>
+								<p><strong>Confirm password</strong></p><input class="form-control"  type="password" name="password1" placeholder="Confirm Password"/>
 						</div>
 						<div class="form-inline">
-									E-Mail: <input class="form-control"  type="text", name="email" placeholder="E-mail"/>
+									<p>E-Mail:</p> <input class="form-control"  type="text" name="email" placeholder="E-mail"/>
 						</div>
 							
 								<div class="form-inline">
@@ -55,9 +91,9 @@
 				</div>		
 			
 			
-			</div>			
+			</div>			 -->
 			<%@include file="footer.jsp"%>
-			</div>	
+				
 	</body>
 	
 </html>
