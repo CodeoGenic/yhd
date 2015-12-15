@@ -62,24 +62,23 @@
 		<li class="dropdown"><a data-toggle="dropdown"
 			class="dropdown-toggle" href="#">Account<b class="caret"></b></a>
 			<ul class="dropdown-menu multi-2-columns">
-				<li><a href="account.jsp" class="ajax_right">Account</a></li>
+				<li><a href="account" class="ajax_right">Account</a></li>
 				<li><a href="index_center.html" class="ajax_right">Orders</a></li>
-				<li><a href="reg.jsp" class="ajax_right">Sign up</a></li>
+				<li id="reg"><a href="reg" class="ajax_right">Sign up</a></li>
 			</ul></li>
 
 		<li class="dropdown"><a data-toggle="dropdown"
 			class="dropdown-toggle" href="#">About Us<b class="caret"></b></a>
 			<ul class="dropdown-menu multi-2-columns">
-				<li><a href="about.jsp" class="ajax_right">About</a></li>
-				<li><a href="contact.jsp" class="ajax_right">Contact</a></li>
-				<li><a href="site-map.jsp" class="ajax_right">Site-map</a></li>
-				<li><a href="404.jsp" class="ajax_right">404 Not found</a></li>
+				<li id="about"><a href="about" class="ajax_right">About</a></li>
+				<li id="contact"><a href="contact" class="ajax_right">Contact</a></li>
+				<li><a href="site-map.jsp" class="ajax_right">Site-map</a></li>				
 			</ul></li>
 			</ul>
 			
 
 		<ul class="nav navbar-right cart">
-			<li class="dropdown"><a href="cart.jsp" class="dropdown-toggle"
+			<li class="dropdown" id="cart"><a href="cart" class="dropdown-toggle"
 				data-toggle="dropdown"><span>5</span></a>
 				<div class="cart-info dropdown-menu">
 					<table class="table">
@@ -119,8 +118,8 @@
 							</tbody>
 						</table>
 						<div class="checkout">
-							<a href="cart.html" class="ajax_right">View Cart</a> | <a
-								href="checkout.html" class="ajax_right">Checkout</a>
+							<a href="cart" class="ajax_right">View Cart</a> | <a
+								href="checkout" class="ajax_right">Checkout</a>
 						</div>
 					</div>
 				</div></li>
