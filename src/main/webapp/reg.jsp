@@ -18,16 +18,16 @@
 			<div id="container">
 				<form class="form-horizontal" action="reg1" role = "form" method="POST">
 					<div>	
-						<div class="col-md-12">
-								<!-- <div class="form-group"> -->
-									<strong>Username</strong><input class="form-control" type="text" name="username" placeholder="Username"/>
-									<strong>Password</strong><input class="form-control"  type="password" name="password" placeholder="Password"/>
-									<strong>Confirm password</strong><input class="form-control"  type="password" name="password1" placeholder="Confirm Password"/>
+						<div class="form-inline">
+								<strong>Username</strong><input class="form-control" type="text" name="username" placeholder="Username"/>
+								<strong>Password</strong><input class="form-control"  type="password" name="password" placeholder="Password"/>
+								<strong>Confirm password</strong><input class="form-control"  type="password" name="password1" placeholder="Confirm Password"/>
+						</div>
+						<div class="form-inline">
 									E-Mail: <input class="form-control"  type="text", name="email" placeholder="E-mail"/>
-								<!-- </div> -->
-								
-								<!-- <div class="form-group"> -->
-								
+						</div>
+							
+								<div class="form-inline">
 									Title:<select class="form-control"  name="Title">
 											<option value="MR">MR</option>
 											<option value="Miss">MISS</option>
@@ -35,18 +35,19 @@
 										</select> 
 									First Name:<input class="form-control"   type="text" name="First name" placeholder="Firstname"/>
 									Surname: <input  class="form-control" type="text" name="Surname" placeholder="Surname"/>
-								<!-- </div> -->
+								</div> 
 								
-							 <!-- <div class="form-group"> -->
+								<div class="form-inline">
 								 Address line 1 :<input  class="form-control"  type="text" name="address1" placeholder="Address Line 1"/>
 								 Address line 2: <input class="form-control"  type="text" name="address2" placeholder="Address line 2"/>
 								 City <input class="form-control"  type="text" name="city" placeholder="City"/>
+								 </div> 
 							     Postal Code : <input class="form-control"  type="text" name="postal code" placeholder="Postal Code"/>
 								 <input class="btn btn_default" type="submit" value="Regisiter"/>	
 								 <div class="btn btn-default" type="button">cancel</div>							 
-							<!-- </div> -->
+						
 							
-							</div>
+						
 						</div>
 				</div>		
 				</div>		
