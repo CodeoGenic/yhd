@@ -66,7 +66,8 @@
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">About<b class="caret"></b></a>
                         <ul class="dropdown-menu multi-2-columns">
 							  <li><a href="index_center.html" class="ajax_right">Homepage center logo</a></li>
-							  <li><a href="about.html" class="ajax_right">About</a></li>
+							   <li id="about"><a href="about" class="ajax_right">About</a></li>
+							  
 							  <li><a href="account.html" class="ajax_right">Account</a></li>
 							  <li><a href="forgot-password.html" class="ajax_right">Forgot password</a></li>
 							  <li><a href="site-map.html" class="ajax_right">Sitemap</a></li>
