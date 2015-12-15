@@ -95,7 +95,7 @@ public class CustomerRepo implements CustomerRepoimpl {
 
 	@Override
 	public void deleteAll() {
-		// TODO Auto-generated method stub
+		//sqltemplate.deleteAll();
 
 	}
 }
