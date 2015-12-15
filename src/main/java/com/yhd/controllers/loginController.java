@@ -11,12 +11,20 @@ import org.springframework.web.servlet.ModelAndView;
 public class loginController {
 
 	@RequestMapping(value="userlogin" ,method = RequestMethod.POST)
-	public ModelAndView login(ModelAndView model, HttpServletRequest request){
+	public String login(ModelAndView model, HttpServletRequest request){
 		String username = (String) request.getParameter("username");
 		String password = (String) request.getParameter("password");
-		printAll(username,password);
-		model.setViewName("index.jsp");
-		return model;
+		printAll(username,password,request.getHeader("referer"));
+		
+		if (request.getHeader("referer").equalsIgnoreCase("http://localhost:8080/webapp/reg")){
+			System.out.println("hello it made it");
+			
+			return "redirect:http://localhost:8080/webapp/";
+		}
+		else{
+		
+		return "redirect:" + request.getHeader("referer");
+		}
 	}
 	
 	public void printAll(String ...args){

@@ -118,18 +118,18 @@
 			     </ul>
 					 
                     <form action="/" class="navbar-form navbar-search" role="search">
-		      <div class="input-group"> 
+		              <div class="input-group"> 
                         <input type="text" name="search" placeholder="Search" class="search-query col-md-2"><button type="submit" class="btn btn-default icon-search"></button> 
-                      </div>
-                      
-                       
-                    </form>
+                      </div>  
+                     </form>
+                    
+                    
                     <form action="userlogin" class="navbar-form navbar-right" role = "form" method="POST">
-                     <!-- <div class ="input-group"> -->
-					 <input class="account" type="text" name="username" placeholder="Username">
+                     <div class ="input-group">                     
+					  <input class="account" type="text" name="username" placeholder="Username">
 					  <input class="account" type ="password" name="password" placeholder="Password">
-					  <input class="login" type="submit" value="Login">
-					 <!-- </div> -->
+					  <input class="btn btn-primary" type="submit" value="Login">
+					 </div>
                     </form>
 					
                   </div>
