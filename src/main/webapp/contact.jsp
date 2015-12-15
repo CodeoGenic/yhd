@@ -66,18 +66,17 @@
 					<div class="location">
 						<address>
 							<strong>Your House Direct</strong> <br>
-							Hilton House<br>
-							Block D<br>
-							Lord Street<br>
-							Stockport<br>
-							Cheshire<br>
-							SK1 3NA<br><br>
+							YHD<br>
+							Someplace<br>
+							Some Street<br>
+							Some City<br>
+							Some Town<br>
+							AA0 0ZZ<br><br>
 
 						<address>
-							<strong>Paul knight </strong> <br>
-							Mobile: +44 (0)7825 778553<br>
-							Showroom: +44 (0)161 429 7111<br>
-							<a href="mailto:#">paul@onehomeuk.co.uk</a>
+							<strong>YHD</strong> <br>
+								
+							<a href="mailto:#">yhd@yourhousedirect.co.uk</a>
 						</address>
 
 					</address>

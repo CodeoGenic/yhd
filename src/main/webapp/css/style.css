@@ -619,8 +619,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	    margin-right:-10px;
 	}
 
-	.navbar-form.navbar-left select.form-control
-	{
+	.navbar-form.navbar-left select.form-control {
 		font-size:12px;
 		padding:6px 10px;
 	}
