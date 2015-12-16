@@ -17,9 +17,9 @@
 </head>
 <body>
 <div class="page-container">
-	<div class="header">
+	
 		<%@include  file="Navbar.jsp" %>
-	</div>
+	
 		
     <div class="container">
         

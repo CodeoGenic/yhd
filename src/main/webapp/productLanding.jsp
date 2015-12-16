@@ -14,23 +14,17 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/windows8tile.css">
 <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One|Exo+2:400,100&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>	<script src="js/modernizr-1.5.min.js"></script>
-	<script src="js/jquery.liveFilter.js"></script>
+	
     <!--script type="text/javascript" src="https://getfirebug.com/firebug-lite-debug.js"></script-->	
 	<title><c:out value="${Title}"></c:out></title>
 </head>
 
 
 <body>
+<div class="page-container" style="background-color: #00000000">
 
+<%@include  file="Navbar.jsp" %>
 
-
-
-<p id="filter"></p>
-<div class="page-container">
-	<div class="header">
-
-			<%@include  file="Navbar.jsp" %>
-	</div>
 
 		
     <div class="container">
