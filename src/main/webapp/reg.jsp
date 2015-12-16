@@ -12,25 +12,14 @@
 		<link rel="stylesheet" type="text/css" href="css/tileCSS.css">
 	</head>
 	<body>
-<<<<<<< HEAD
 	
 	
-		<div class="header">
+	
 		<%@include  file="Navbar.jsp" %>
 		
-			</div>
+	
 			
 			<div class="page-container" style="background-color: #00000000">
-=======
-	<div class="page-container" style="background-color: #00000000">
-	
-
-		<%@include  file="Navbar.jsp" %>
-		
-			
-	
-		
->>>>>>> 871648ffab05b227f7c81787e65025bf65591e52
 		
 <div id='reg-container'>
   <div class='signup'>

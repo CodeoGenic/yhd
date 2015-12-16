@@ -36,8 +36,29 @@
 			document.getElementById("filter").innerHTML = x;
 		}
 	</script>
+	
+	
+			
+			
+				
+		<!-- <form action="/" class="navbar-form navbar-search" role="search">
+			<div class="input-group">
+				<input type="text" name="search" placeholder="Search"
+					class="search-query col-md-4">
+				<button type="submit" class="btn btn-default icon-search"></button>
+			</div>
+		</form> -->
 
+	
 
+		<form action="userlogin" class="navbar-form navbar-right" role="form"
+			method="POST">
+			<div class="input-group">
+				<input class="account" type="text" name="username" placeholder="Username"> 
+					<input class="account" type="password" name="password" placeholder="Password"> 
+					<input class="btn btn-primary" type="submit" value="Login">
+			</div>
+		</form>
 
 	<div class="navbar-collapse collapse navbar-right">
 		<ul class="nav navbar-nav">
@@ -127,27 +148,14 @@
 		
 		
 
-		<form action="/" class="navbar-form navbar-search" role="search">
-			<div class="input-group">
-				<input type="text" name="search" placeholder="Search"
-					class="search-query col-md-4">
-				<button type="submit" class="btn btn-default icon-search"></button>
-			</div>
-		</form>
-
-
-		<form action="userlogin" class="navbar-form navbar-right" role="form"
-			method="POST">
-			<div class="input-group">
-				<input class="account" type="text" name="username" placeholder="Username"> 
-					<input class="account" type="password" name="password" placeholder="Password"> 
-					<input class="btn btn-primary" type="submit" value="Login">
-			</div>
-		</form>
+		
 
 	</div>
 
-
+              <div class="container-4">
+			    <input type="search" id="search" placeholder="Search our store" />
+			    <button class="icon"><i class="fa fa-search"></i></button>
+			  </div>
 
 
 	<!-- /.navbar-collapse -->
