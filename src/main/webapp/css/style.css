@@ -39,7 +39,7 @@
 .signup {
   width: 400px;
   padding: 40px 30px;
-  background-color: white;
+  background-color: #2E3740;
   text-align: center;
   border-radius: 20px 20px 20px 20px;
   margin: 0px auto;
@@ -51,12 +51,16 @@
   margin: 0 auto;
   width: 80%;
   border: 0;
-  border-bottom: 1px solid rgba(0,0,0,.2);
+  border-bottom: 1px solid #435160;
   height: 45px;
   line-height: 45px;  
   margin-bottom: 10px;
   font-size: 1em;
-  color: rgba(0,0,0,.4);
+  color: rgba(0,0,0,1);
+  background-color: #2E3740;
+  color: #6D7781;
+  
+   
 }
 
 .signup input[type='text']:focus,

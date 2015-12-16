@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/camera.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--script type="text/javascript" src="https://getfirebug.com/firebug-lite-debug.js"></script-->	
-	<title>Sapphire</title>
+	<title>${title}</title>
 </head>
 <body>
 <div class="page-container">
