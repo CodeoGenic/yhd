@@ -13,7 +13,12 @@
 	</head>
 	<body>
 	<div class="page-container" style="background-color: #00000000">
+	
+
 		<%@include  file="Navbar.jsp" %>
+		
+			
+	
 		
 		
 <div id='reg-container'>

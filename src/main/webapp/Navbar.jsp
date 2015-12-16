@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
+<div class="header">
 <nav class="navbar container">
 
 	<div class="navbar-header">
@@ -62,7 +62,7 @@
 		<li class="dropdown"><a data-toggle="dropdown"
 			class="dropdown-toggle" href="#">Account<b class="caret"></b></a>
 			<ul class="dropdown-menu multi-2-columns">
-				<li><a href="account" class="ajax_right">Account</a></li>
+				<li><a href="account.jsp" class="ajax_right">Account</a></li>
 				<li><a href="index_center.html" class="ajax_right">Orders</a></li>
 				<li id="reg"><a href="reg" class="ajax_right">Sign up</a></li>
 			</ul></li>
@@ -152,3 +152,4 @@
 
 	<!-- /.navbar-collapse -->
 </nav>
+</div>
