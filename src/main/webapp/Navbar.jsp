@@ -56,7 +56,10 @@
 			<div class="input-group">
 				<input class="account" type="text" name="username" placeholder="Username"> 
 					<input class="account" type="password" name="password" placeholder="Password"> 
-					<input class="btn btn-primary" type="submit" value="Login">
+					
+					 <button type="submit" class="btn btn-default">
+                <i class="fa fa-arrow-right"></i>
+            </button>
 			</div>
 		</form>
 
