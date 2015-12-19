@@ -22,7 +22,7 @@ public class IndexController {
 	 * @param model
 	 * @return
 	 */
-	@RequestMapping("/")
+	@RequestMapping("index")
 	public ModelAndView load(ModelAndView model) {
 		
 	/*	 

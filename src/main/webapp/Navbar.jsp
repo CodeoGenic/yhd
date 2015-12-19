@@ -154,11 +154,12 @@
 		
 
 	</div>
-
-              <div class="container-4">
-			    <input type="search" id="search" placeholder="Search our store" />
-			    <button class="icon"><i class="fa fa-search"></i></button>
-			  </div>
+			<form action="Search" method="POST" >
+				<div class="container-4">
+					<input name="item" id="search" placeholder="Search our store" />
+					<button class="icon"><i class="fa fa-search"></i></button>
+				</div>
+			  </form>
 
 
 	<!-- /.navbar-collapse -->
