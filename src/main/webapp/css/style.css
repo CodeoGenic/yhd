@@ -38,9 +38,10 @@
 }
 
 .container-4 input#search{
+  
   width: 300px;
   height: 35px;
-  background: #f7f7f7;
+  background: #435160;
   border: none;
   font-size: 10pt;
   float: left;
@@ -76,10 +77,10 @@
   border-bottom-right-radius: 5px;
  
   border: none;
-  background: #232833;
+  background: #4dc5f2;
   height: 35px;
   width: 35px;
-  color: #4f5b66;
+  color: #ffffff;
   opacity: 0;
   font-size: 10pt;
  
