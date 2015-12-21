@@ -58,6 +58,11 @@
 		</div>
 		
 		<div class="row">
+			<c:if test="${result == 0}">
+					<p> no resutls found</p>
+			</c:if>
+	
+			
 			<c:forEach items="${products}" var="product">
 				 <div class="col-md-3">
 			    <div class="product">
