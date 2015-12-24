@@ -113,10 +113,10 @@ public class CatalogContoller {
 			cat[5] = "Double wardrobes";
 			cat[6] = "Three chest";
 			cat[7] = "Two chest";
-			model.addObject("Title", "Bedroom");
-			model.addObject("Cat1", "Beds");
-			model.addObject("Cat2", "Wardrobes");
-			model.addObject("Cat3", "Drawers");
+			model.addObject("Title", "Kitchen");
+			model.addObject("Cat1", "Tables");
+			model.addObject("Cat2", "Dinning");
+			model.addObject("Cat3", "Extras");
 			model.addObject("Categories", cat);
 			model.addObject("products", related);
 		}
@@ -131,10 +131,10 @@ public class CatalogContoller {
 			cat[5] = "Double wardrobes";
 			cat[6] = "Three chest";
 			cat[7] = "Two chest";
-			model.addObject("Title", "Bedroom");
-			model.addObject("Cat1", "Beds");
-			model.addObject("Cat2", "Wardrobes");
-			model.addObject("Cat3", "Drawers");
+			model.addObject("Title", "Living Room");
+			model.addObject("Cat1", "Living Tables");
+			model.addObject("Cat2", "Drawers");
+			model.addObject("Cat3", "");
 			model.addObject("Categories", cat);
 			model.addObject("products", related);
 
