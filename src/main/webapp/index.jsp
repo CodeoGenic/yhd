@@ -22,6 +22,7 @@
 <title>${title}</title>
 </head>
 <body>
+<div class = "scrollbar2">
 	<div class="page-container" style="background-color: #00000000">
 		<%@include  file="Navbar.jsp" %>
 
@@ -204,5 +205,6 @@
 			});
 		});
 	</script>
+</div>
 </body>
 </html>

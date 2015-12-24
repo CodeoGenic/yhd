@@ -372,8 +372,24 @@ div::-webkit-scrollbar {
 	
 }
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
+=======
+.scrollbar2{
+
+	-webkit-scrollbar 
+	width: 4px;
+
+-webkit-scrollbar-track 
+	border-radius: 4px;
+
+
+-webkit-scrollbar-thumb 
+	border-radius: 4px;
+}
+
+>>>>>>> Stashed changes
 
 
 >>>>>>> origin/master
