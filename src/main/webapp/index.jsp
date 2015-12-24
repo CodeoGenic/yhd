@@ -158,6 +158,7 @@
 	<script type="text/javascript" src="js/camera.js"></script>
 	<script type="text/javascript" src="js/sapphire.js"></script>
 	<script type="text/javascript" src="js/tileJs.js"></script>
+	<script type="text/javascript" src="js/navbar-scroll.js"></script>
 	<script>
 		$(document).ready(function() {
 			jQuery('#slideshow0 > div').camera({
