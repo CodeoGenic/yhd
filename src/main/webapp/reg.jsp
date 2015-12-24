@@ -23,22 +23,39 @@
 		
 <div id='reg-container'>
   <div class='signup'>
-     <form class="form-horizontal" action="reg1" role = "form" method="POST">
-     
-       <input type="text" name="username" placeholder="Username"/>
-	   <input type="password" name="password" placeholder="Password"/>
-	   <input type="password" name="password1" placeholder="Confirm Password"/>
-				
-       
-       <div class="form-inline">
-			<select name="Title">
+   <p style= "color: white;">* Indicates a required field</p>
+   
+       <form class="form-horizontal" action="reg1" role = "form" method="POST">
+    
+            <p style= "color: white; float: left">Personal Details *</p>
+            <br>
+            
+            <select name="Title">
+                    <option value="title">Choose title</option>
 					<option value="MR">MR</option>
 					<option value="Miss">MISS</option>
 					<option value="Mrs">MRS</option>
 			</select> 
-					<input type="text" name="First name" placeholder="Firstname"/>
-					<input  type="text" name="Surname" placeholder="Surname"/>	
+            
+    
+    <input type="text" name="First name" placeholder="Firstname"/>
+	<input  type="text" name="Surname" placeholder="Surname"/>	
+                           
+                            <br>
+               <p style= "color: white; float: left">Create username and password *</p>
+                            
+              
+    
+       <input type="text" name="username" placeholder="Username"/>
+	   <input type="password" name="password" placeholder="Password"/>
+	   <input type="password" name="password1" placeholder="Confirm Password"/>
+	   <br>
+				
+       
+       <div class="form-inline">
+							
 					
+			 <p style= "color: white; float: left">Address details</p>
 					
 					<input type="text" name="address1" placeholder="Address Line 1"/>
 					<input type="text" name="address2" placeholder="Address line 2"/>
@@ -47,7 +64,7 @@
 								 					
     	</div> 
        
-         <input class="btn btn_default" type="submit" value="Regisiter"/>
+         <input class="btn btn_default" type="submit" value="Create an account"/>
      </form>
   </div> 
 </div>
