@@ -53,7 +53,7 @@
 		<form action="cat" method="post">
 		<div class="menu_simple">
 			<ul>
-				<li><a href="type?type=0"><h3>Beds</h3></a></li>				
+				<li><a href="type?type=0"><h3>${Cat1}</h3></a></li>				
 				<!--<li class="active"><a href="Bedroom.html">trendy</a></li>-->
 				<li><input type="submit" class="btn-sidemenu"  name="bed" value="${Categories[0]}">
 					<input class="hidden" name="type" value="0">
@@ -70,12 +70,12 @@
 				
 						
 
-				<li><a href="type?type=1"><h3>Wardrobes</h3></a></li>
-				<li><a href="#">Single</a></li>
-				<li><a href="#">Double</a></li>
-				<li><a href="type?type=2"><h3>Drawers</h3></a></li>
-				<li><a href="#">Two chest</a></li>
-				<li><a href="#">Three chest</a></li>
+				<li><a href="type?type=${type}"><h3><c:out value="${Cat2}"></c:out></h3></a></li>
+				<li><a href="#">${Categories[4]}</a></li>
+				<li><a href="#">${Categories[5]}</a></li>
+				<li><a href="type?type=${type}"><h3><c:out value="${Cat3}"></c:out></h3></a></li>
+				<li><a href="#">${Categories[6]}</a></li>
+				<li><a href="#">${Categories[7]}</a></li>
 			</ul>
 		</div>
 		</form>
