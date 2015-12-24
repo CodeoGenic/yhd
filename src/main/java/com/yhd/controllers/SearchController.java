@@ -37,8 +37,8 @@ public class SearchController {
 			for (int j = i + 1; j < array.length; j++) {
 				Product product1 = (Product) array[j];
 				Product product2 = (Product) array[min];
-				int compare = product1.getProductName().toLowerCase()
-						.compareTo(product2.getProductName().toLowerCase());
+				int compare = product1.getProductName().toLowerCase().trim()
+						.compareToIgnoreCase((product2.getProductName().toLowerCase().trim()));
 				if (compare < 0) {
 					min = j;
 				}
@@ -58,16 +58,18 @@ public class SearchController {
 	}
 	
 	public int Search(ArrayList<Product> list, String term){
-		int index =0;
-	
-		for(int i=0; i<list.size(); i++){
-			if(list.get(i).getProductName().toLowerCase().contains(term.toLowerCase())){
-			 index = i;
-			 break;
-				
-			}
+		for(Product product : list){
+			System.out.println(product.getProductName().trim());
 		}
-		return index;
+		for(int i=0; i<list.size(); i++ ){
+			if(list.get(i).getProductName().toLowerCase().contains(term.toLowerCase().toLowerCase())){
+				
+			return i;	
+			}
+			
+		}
+		;
+		return 0;
 		
 	}
 	
@@ -80,14 +82,13 @@ public class SearchController {
 		System.out.println(term);
 		
 		ArrayList<Product> sortedList = new ArrayList<Product>(sort(products));
-		
-		for(int i=Search(sortedList, term); i<sortedList.size(); i++){
+		int i=Search(sortedList, term);
+		System.out.println(i);
+	
+		for(; i<sortedList.size(); i++){
 			if(sortedList.get(i).getProductName().toLowerCase().contains(term.toLowerCase())){
 					search.add(sortedList.get(i));
 		
-			}
-			else{
-				break;
 			}
 		}
 		

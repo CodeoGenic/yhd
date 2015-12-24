@@ -166,8 +166,8 @@ public class IndexController {
 //				"image/assets/YHD drawers/KN5W/903_0269.JPG"));
 		
 		//YHD Tables
-		
-		/*productRepository.insert(new Product(9, "light brown",new Dimension(30,60,40), "buy this now or else", "image/assets/YHD Tables/KN46T/903_0597.JPG",
+		/*
+		productRepository.insert(new Product(9, "light brown",new Dimension(30,60,40), "buy this now or else", "image/assets/YHD Tables/KN46T/903_0597.JPG",
 			"Extendable Dining table", 500, 20, 99999, "Dining Table with extending feature" , "customeremail", "customername", 3, "Dining",
 				"image/assets/YHD Tables/KN46T/903_0600.JPG", "image/assets/YHD Tables/KN46T/903_0611.JPG", "image/assets/YHD Tables/KN46T/903_0624.JPG", 
 				"image/assets/YHD Tables/KN46T/903_0627.JPG", "image/assets/YHD Tables/KN46T/903_0629.JPG", "image/assets/YHD Tables/KN46T/903_0631.JPG", "image/assets/YHD Tables/KN46T/903_0633.JPG",
