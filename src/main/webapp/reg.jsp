@@ -23,11 +23,11 @@
 		
 <div id='reg-container'>
   <div class='signup'>
-   <p style= "color: white;">* Indicates a required field</p>
+   <p style= "color: black;">* Indicates a required field</p>
    
        <form class="form-horizontal" action="reg1" role = "form" method="POST">
     
-            <p style= "color: white; float: left">Personal Details *</p>
+            <p style= "color: black; float: left">Personal Details *</p>
             <br>
             
             <select name="Title">
@@ -38,15 +38,15 @@
 			</select> 
             
     
-    <input type="text" name="First name" placeholder="Firstname"/>
-	<input  type="text" name="Surname" placeholder="Surname"/>	
+    <input type="text" name="First name" placeholder="First Name"/>
+	<input  type="text" name="Surname" placeholder="Last Name"/>	
                            
                             <br>
-               <p style= "color: white; float: left">Create username and password *</p>
+               <p style= "color: black; float: left">Create username and password *</p>
                             
               
     
-       <input type="text" name="username" placeholder="Username"/>
+       <input type="text" name="username" placeholder="Email Address"/>
 	   <input type="password" name="password" placeholder="Password"/>
 	   <input type="password" name="password1" placeholder="Confirm Password"/>
 	   <br>
@@ -55,7 +55,7 @@
        <div class="form-inline">
 							
 					
-			 <p style= "color: white; float: left">Address details</p>
+			 <p style= "color: black; float: left">Address details</p>
 					
 					<input type="text" name="address1" placeholder="Address Line 1"/>
 					<input type="text" name="address2" placeholder="Address line 2"/>
@@ -66,6 +66,7 @@
        
          <input class="btn btn_default" type="submit" value="Create an account"/>
      </form>
+     <a>Return to store</a>
   </div> 
 </div>
 		

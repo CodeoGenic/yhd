@@ -8,7 +8,9 @@
 	<div class="container white-bg">
 		<a href="index"><img src="img/YHD.png" alt="YHD"></a>
 		
-		<form action="userlogin"  class="form-inline navbar-form navbar-right" role="form" method="POST">
+		
+		<!--This is the original login form below  -->
+		<!-- <form action="userlogin"  class="form-inline navbar-form navbar-right" role="form" method="POST">
 			<div class="form-group">
 				<input type="text" id="username" class="form-control" name="username"	placeholder="Username">
 			</div>
@@ -17,7 +19,7 @@
 					name="password" placeholder="Password">
 			</div>
 			<button type="button" class="btn btn-default"><i class="fa fa-arrow-right"></i></button>
-		</form>
+		</form> -->
 	</div>
 
 	<nav id="myNav" class="navbar navbar-static-top white-bg">
@@ -101,7 +103,51 @@
 					</button>
 				</div>
 			</form>
+			
+			
+			
+			
  -->
+ 
+ <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-arrow-right"></i><span class="caret"></span></a>
+			<ul id="login-dp" class="dropdown-menu">
+				<li>
+					 <div class="row">
+							<div class="col-md-12">
+							
+								<form action="userlogin"  class="form-inline navbar-form navbar-right" role="form" method="POST">
+									<div class="form-group">
+										<input type="text" id="username" class="form-control" 
+										    name="username"	placeholder="Username">										
+									</div>
+									<div class="form-group">				
+										<input type="password" class="form-control" id="password"
+											name="password" placeholder="Password">
+										<div class="help-block text-right"><a href="">Forget your password ?</a></div>
+											
+									</div>
+									<button type="submit" class="btn btn-primary btn-block">Sign in</button>
+									<div class="checkbox">
+											 <label>
+											 <input type="checkbox"> keep me logged-in
+											 </label>
+										</div>
+								</form>
+								
+								<!-- form above is what will be posted -->
+							
+								 
+							</div>
+							<div class="bottom text-center">
+								 <a href="#"><b>Create an account</b></a>
+							</div>
+					 </div>
+				</li>
+			</ul>
+			</li>
+      </ul>
 			<div class="navbar-collapse collapse navbar-right">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="index">Home</a></li>
@@ -139,7 +185,8 @@
 						</ul></li>
 				</ul>
 
-
+   
+   
 				<ul class="nav navbar-right cart">
 					<li class="dropdown" id="cart"><a href="cart"
 						class="dropdown-toggle" data-toggle="dropdown"><span>5</span></a>
